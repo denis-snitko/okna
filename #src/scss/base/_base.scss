@@ -1,0 +1,33 @@
+body {
+    background-color: #e5e5e5;
+}
+
+a {
+    transition: $base-transition;
+
+}
+
+.container {
+    @include container();
+}
+
+.header-button {
+    width: 314px;
+    padding: 13px;
+
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Gilroy";
+
+    color: $base-white;
+
+    background-color: $base-blue;
+    border: 1px solid $base-blue;
+    border-radius: 20px;
+    transition: $base-transition;
+    
+    &:hover {
+        color: $base-blue;
+        background-color: $base-white;
+    }
+}
