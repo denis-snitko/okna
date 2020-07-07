@@ -1,0 +1,18 @@
+.s-banner {
+    padding: 40px 0 20px 0;
+    // .s-banner__body
+
+    @include md-block() {
+        display: none;
+    }
+
+    &__body {
+        width: 100%;
+        height: 100px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
