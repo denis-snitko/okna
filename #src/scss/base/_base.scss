@@ -1,3 +1,7 @@
+body {
+    background-color: #fcfcfc;
+}
+
 .main-body {
     display: flex;
     flex-direction: column;
@@ -6,7 +10,8 @@
 
 .main-content {
     flex: 1 1 auto;
-    background-color: #e5e5e5;
+    padding-top: 20px;
+    padding-bottom: 80px;
 }
 
 a {
@@ -35,5 +40,62 @@ a {
     &:hover {
         color: $base-blue;
         background-color: $base-white;
+    }
+}
+
+// Bread-crumbs
+.bread-crumbs {
+    padding: 20px 0;
+
+    @include md-block() {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        line-height: 24px;
+
+        color: #828282;
+    }
+
+    &__item {
+        position: relative;
+        margin-right: 18px;
+        color: $base-blue;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 8px;
+            right: -12px;
+            display: inline-block;
+            width: 5px;
+            height: 9px;
+
+            background: url("../../img/svg/arrow-right.svg");
+            background-repeat: no-repeat;
+        }
+
+        &:last-child {
+            color: $base-blue;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+    }
+
+    &__link {
+        font-size: 12px;
+        line-height: 24px;
+
+        color: #828282;
+        transition: $base-transition;
+
+        &:hover {
+            color: $base-blue;
+        }
     }
 }

@@ -417,20 +417,22 @@ summary {
 /* Typography */
 
 body {
-  font-family: "Lato";
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
+  font-family: "Lato";
+  color: #333333;
+}
+
+h1 {
+  padding-bottom: 40px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  font-family: "Gilroy";
   color: #333333;
 }
 
 /*
-h1 {
-    font-size: rem(54px);
-    line-height: $base-line-height * 3;
-    margin-bottom: $base-line-height * 2;
-    font-weight: bold;
-}
-
 h2 {
     font-size: 36px;
     line-height: $base-line-height * 2;
@@ -450,6 +452,10 @@ h3 {
 
 /* Base styles */
 
+body {
+  background-color: #fcfcfc;
+}
+
 .main-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -465,7 +471,8 @@ h3 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  background-color: #e5e5e5;
+  padding-top: 20px;
+  padding-bottom: 80px;
 }
 
 a {
@@ -499,6 +506,60 @@ a {
 .header-button:hover {
   color: #038dc6;
   background-color: #ffffff;
+}
+
+.bread-crumbs {
+  padding: 20px 0;
+}
+
+.bread-crumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 12px;
+  line-height: 24px;
+  color: #828282;
+}
+
+.bread-crumbs__item {
+  position: relative;
+  margin-right: 18px;
+  color: #038dc6;
+}
+
+.bread-crumbs__item::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -12px;
+  display: inline-block;
+  width: 5px;
+  height: 9px;
+  background: url("../../img/svg/arrow-right.svg");
+  background-repeat: no-repeat;
+}
+
+.bread-crumbs__item:last-child {
+  color: #038dc6;
+}
+
+.bread-crumbs__item:last-child::after {
+  display: none;
+}
+
+.bread-crumbs__link {
+  font-size: 12px;
+  line-height: 24px;
+  color: #828282;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.bread-crumbs__link:hover {
+  color: #038dc6;
 }
 
 /* End Base styles */
@@ -914,6 +975,10 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .bread-crumbs {
+    display: none;
+  }
+
   .burger-menu-icon {
     margin: 0;
     margin-left: 30px;

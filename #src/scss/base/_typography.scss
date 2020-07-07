@@ -1,18 +1,21 @@
 body {
-    font-family: "Lato";
-    font-size: $base-font-size;
     font-weight: 400;
+    font-size: $base-font-size;
+    font-family: "Lato";
     color: $base-text-color;
 }
 
-/*
 h1 {
-    font-size: rem(54px);
-    line-height: $base-line-height * 3;
-    margin-bottom: $base-line-height * 2;
-    font-weight: bold;
+    padding-bottom: 40px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    font-family: $gilroy-font;
+
+    color: #333333;
 }
 
+/*
 h2 {
     font-size: 36px;
     line-height: $base-line-height * 2;
