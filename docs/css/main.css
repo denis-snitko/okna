@@ -450,7 +450,21 @@ h3 {
 
 /* Base styles */
 
-body {
+.main-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.main-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   background-color: #e5e5e5;
 }
 
@@ -703,6 +717,71 @@ a {
 
 /* End Header */
 
+/* Footer */
+
+.footer {
+  padding: 48px 0 15px 0;
+  background-color: #f2f2f2;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-bottom: 40px;
+}
+
+.footer__col {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(25% - 30px);
+  padding: 0 26px;
+}
+
+.footer__counter {
+  width: 132px;
+  height: 43px;
+}
+
+.footer__menu-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333333;
+}
+
+.footer__menu-item {
+  margin: 5px 0;
+}
+
+.footer__menu-item a {
+  font-size: 14px;
+  color: #038dc6;
+}
+
+.footer__menu-item a:hover {
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
+}
+
+.footer__copyright p {
+  margin-bottom: 3px;
+}
+
+/* End Footer */
+
 /* END MAIN STYLES */
 
 @media screen and (max-width: 992px) {
@@ -769,6 +848,23 @@ a {
   .burger-menu-icon {
     margin: 0;
     margin-left: 30px;
+  }
+
+  .footer__row {
+    padding-bottom: 0;
+  }
+
+  .footer__col {
+    width: calc(50% - 30px);
+  }
+
+  .footer__col {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .footer__menu-title {
+    font-size: 14px;
   }
 }
 
