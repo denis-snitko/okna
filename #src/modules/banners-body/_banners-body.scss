@@ -1,0 +1,17 @@
+.banners-body {
+    &__inner {
+        width: 130px;
+
+        img {
+            display: block;
+            width: 130px;
+            height: 275px;
+
+            margin-bottom: 22px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

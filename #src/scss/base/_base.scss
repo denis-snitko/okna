@@ -99,3 +99,48 @@ a {
         }
     }
 }
+
+.content-body {
+    // .content-body__top-filter
+
+    &__top-filter {
+    }
+
+    // .content-body__row
+
+    &__row {
+        @include row-flex();
+    }
+
+    &__col-3,
+    &__col-7,
+    &__col-2 {
+        @include col();
+    }
+
+    &__col-3 {
+        @include size(3);
+
+        @include lg-block() {
+            display: none;
+        }
+    }
+
+    // .content-body__col-7
+
+    &__col-7 {
+        @include size(7);
+        @include size-xl(9);
+        @include size-lg(12);
+    }
+
+    // .content-body__col-2
+
+    &__col-2 {
+        @include size(2);
+
+        @include xl-block() {
+            display: none;
+        }
+    }
+}
