@@ -975,7 +975,6 @@ a {
 }
 
 .main-item a {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   color: #038dc6;
@@ -1042,6 +1041,14 @@ a {
   background: url("../img/svg/checked-green.svg") 17px 8px no-repeat;
   border: 1px solid #d0d0d0;
   border-radius: 20px;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.main-item__header-btn:hover {
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .main-item__body {
@@ -1127,9 +1134,9 @@ a {
 }
 
 .main-item__sale p {
+  font-family: "Gilroy";
   font-weight: 600;
   font-size: 14px;
-  font-family: "Gilroy";
   color: #333333;
 }
 
@@ -1202,9 +1209,9 @@ a {
   width: 175px;
   height: 40px;
   margin-right: 10px;
+  font-family: "Gilroy";
   font-weight: 600;
   font-size: 14px;
-  font-family: "Gilroy";
   color: #4f4f4f;
   background: #ffffff;
   border: none;
@@ -1245,6 +1252,72 @@ a {
   width: 15px;
   height: 15px;
   background: url("../img/svg/counter.svg") center no-repeat;
+}
+
+.main-item--yellow {
+  color: #333333;
+  background: #fee500;
+}
+
+.main-item--yellow a {
+  color: inherit;
+}
+
+.main-item--yellow .main-item__header-logo,
+.main-item--yellow .main-item__header-btn {
+  background-color: #fff;
+}
+
+.main-item--yellow .main-item__header-btn {
+  border: none;
+}
+
+.main-item--yellow .main-item__body-tel::before {
+  background: url("../img/svg/tel-gray.svg") center no-repeat;
+}
+
+.main-item--yellow .main-item__body-links::before {
+  background: url("../img/svg/map-badge-gray.svg") center no-repeat;
+}
+
+.main-item--yellow .main-item__sale::before {
+  background: url("../img/svg/sale-green.svg") center no-repeat;
+}
+
+.main-item--yellow .main-item__sale p span {
+  color: #375700;
+}
+
+.main-item--blue {
+  color: #ffffff;
+  background: #038dc6;
+}
+
+.main-item--blue h3,
+.main-item--blue p,
+.main-item--blue a {
+  color: inherit;
+}
+
+.main-item--blue .main-item__body p span {
+  color: inherit;
+}
+
+.main-item--blue .main-item__header-logo,
+.main-item--blue .main-item__header-btn {
+  background-color: #fff;
+}
+
+.main-item--blue .main-item__header-btn {
+  border: none;
+}
+
+.main-item--blue .main-item__body-tel::before {
+  background: url("../img/svg/tel-white.svg") center no-repeat;
+}
+
+.main-item--blue .main-item__body-links::before {
+  background: url("../img/svg/map-badge-white.svg") center no-repeat;
 }
 
 /* End Main-item */
