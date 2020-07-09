@@ -193,7 +193,7 @@ a {
 
     &__title {
         position: relative;
-        padding: 14px 35px;
+        padding: 14px 25px;
 
         font-family: Lato;
         font-weight: 700;
@@ -209,7 +209,7 @@ a {
             content: "";
             position: absolute;
             top: 17px;
-            right: 20px;
+            right: 30px;
             width: 6px;
             height: 12px;
             background: url("../img/svg/big-arrow-right.svg") center no-repeat;
@@ -225,7 +225,7 @@ a {
     }
 
     &__list {
-        padding: 16px 16px 16px 38px;
+        padding: 16px 16px 16px 30px;
     }
 }
 
