@@ -1258,6 +1258,10 @@ a {
   color: #333333;
 }
 
+.main-item__swiper .swiper-container {
+  position: static;
+}
+
 .main-item__swiper .swiper-slide {
   width: 99px;
   height: 92px;

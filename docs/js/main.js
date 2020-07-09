@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let sliders = document.querySelectorAll('.swiper-container');
 
     sliders.forEach((el) => {
-        new Swiper('.swiper-container', {
+        new Swiper(el, {
             slidesPerView: 3,
             spaceBetween: 5,
             centeredSlides: true,
