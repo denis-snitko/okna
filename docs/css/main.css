@@ -594,6 +594,105 @@ a {
   width: calc(16.66667% - 30px);
 }
 
+.tabs .tabs__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.tabs ul.tabs__nav li {
+  position: relative;
+  width: 100%;
+  line-height: 42px;
+  color: #828282;
+  background-color: #f6f6f6;
+  overflow: hidden;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.tabs ul.tabs__nav li:hover {
+  color: #ffffff;
+  background-color: #038dc6;
+}
+
+.tabs ul.tabs__nav li.tabs__nav--active {
+  display: block;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #038dc6;
+}
+
+.tabs .tabs__container {
+  width: 100%;
+  background: #fff;
+}
+
+.tabs .tab__content {
+  display: none;
+}
+
+.accordeon {
+  text-align: left;
+}
+
+.accordeon__title {
+  position: relative;
+  padding: 14px 35px;
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 16px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.accordeon__title::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 6px;
+  height: 12px;
+  background: url("../img/svg/big-arrow-right.svg") center no-repeat;
+}
+
+.accordeon__title:hover {
+  color: #038dc6;
+}
+
+.accordeon__title:first-child {
+  border-top: 1px solid transparent;
+}
+
+.accordeon__list {
+  padding: 16px 16px 16px 38px;
+}
+
+.hidden {
+  display: none;
+}
+
+.active-bg {
+  color: #038dc6;
+  border-top: 1px solid transparent;
+}
+
+.accordeon__title--active::after {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 /* End Base styles */
 
 /* MAIN STYLES */
@@ -847,6 +946,18 @@ a {
 }
 
 /* End Banners-body */
+
+/* Main-filter */
+
+.main-filter {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* End Main-filter */
 
 /* Main-item */
 
