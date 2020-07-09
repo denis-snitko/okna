@@ -491,9 +491,9 @@ a {
 .header-button {
   width: 314px;
   padding: 13px;
+  font-family: "Gilroy";
   font-weight: 600;
   font-size: 16px;
-  font-family: "Gilroy";
   color: #ffffff;
   background-color: #038dc6;
   border: 1px solid #038dc6;
@@ -570,6 +570,9 @@ a {
       flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .content-body__col-3,
@@ -583,7 +586,7 @@ a {
 }
 
 .content-body__col-3 {
-  width: calc(25% - 30px);
+  width: calc(29.16667% - 30px);
 }
 
 .content-body__col-7 {
@@ -591,7 +594,7 @@ a {
 }
 
 .content-body__col-2 {
-  width: calc(16.66667% - 30px);
+  width: calc(12.5% - 30px);
 }
 
 .tabs .tabs__nav {
@@ -946,6 +949,67 @@ a {
 }
 
 /* End Banners-body */
+
+/* Top-filter */
+
+.top-filter {
+  margin-bottom: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-filter__links {
+  display: inline-block;
+}
+
+.top-filter__links a {
+  margin-right: 20px;
+  color: #038dc6;
+}
+
+.top-filter__links a:hover {
+  text-decoration: underline;
+}
+
+.top-filter__links .link--list {
+  color: #038dc6;
+}
+
+.top-filter__links .link--map {
+  color: #828282;
+}
+
+.top-filter__links .link--all {
+  color: #bdbdbd;
+}
+
+.top-filter form {
+  display: inline-block;
+}
+
+.top-filter form span {
+  font-weight: 500;
+  color: #828282;
+}
+
+.top-filter form select {
+  margin-left: 5px;
+  padding: 0 20px 0 10px;
+  font-weight: 500;
+  color: #038dc6;
+  background: url("../img/svg/arrow-top.svg") right center no-repeat;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+/* End Top-filter */
 
 /* Main-filter */
 
@@ -1477,7 +1541,7 @@ a {
 
 @media screen and (max-width: 1200px) {
   .content-body__col-7 {
-    width: calc(75% - 30px);
+    width: calc(70.83333% - 30px);
   }
 
   .content-body__col-2 {
@@ -1564,6 +1628,10 @@ a {
   }
 
   .s-banner {
+    display: none;
+  }
+
+  .top-filter {
     display: none;
   }
 

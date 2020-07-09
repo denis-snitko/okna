@@ -1,0 +1,57 @@
+.top-filter {
+    margin-bottom: 27px;
+    display: flex;
+    justify-content: space-between;
+
+    @include md-block() {
+        display: none;
+    }
+
+    &__links {
+        display: inline-block;
+        a {
+            margin-right: 20px;
+            color: #038dc6;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .link--list {
+            color: $base-blue;
+        }
+        .link--map {
+            color: #828282;
+        }
+        .link--all {
+            color: #bdbdbd;
+        }
+    }
+
+    form {
+        display: inline-block;
+        // margin-left: 100px;
+
+        span {
+            // margin-left: 30px;
+            font-weight: 500;
+            color: #828282;
+        }
+
+        select {
+            margin-left: 5px;
+            padding: 0 20px 0 10px;
+
+            font-weight: 500;
+            color: $base-blue;
+
+            background: url("../img/svg/arrow-top.svg") right center no-repeat;
+
+            border: none;
+            appearance: none;
+
+            cursor: pointer;
+        }
+    }
+}

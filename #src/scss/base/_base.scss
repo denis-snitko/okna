@@ -26,9 +26,9 @@ a {
     width: 314px;
     padding: 13px;
 
+    font-family: "Gilroy";
     font-weight: 600;
     font-size: 16px;
-    font-family: "Gilroy";
 
     color: $base-white;
 
@@ -110,6 +110,7 @@ a {
 
     &__row {
         @include row-flex();
+        justify-content: space-between;
     }
 
     &__col-3,
@@ -119,7 +120,7 @@ a {
     }
 
     &__col-3 {
-        @include size(3);
+        @include size(3.5);
 
         @include lg-block() {
             display: none;
@@ -130,14 +131,14 @@ a {
 
     &__col-7 {
         @include size(7);
-        @include size-xl(9);
+        @include size-xl(8.5);
         @include size-lg(12);
     }
 
     // .content-body__col-2
 
     &__col-2 {
-        @include size(2);
+        @include size(1.5);
 
         @include xl-block() {
             display: none;
