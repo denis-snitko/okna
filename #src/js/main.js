@@ -27,6 +27,16 @@ jQuery(function ($) {
     $('.burger-menu-icon').click(function () {
         $('.content-body__col-3').fadeToggle(150);
     })
+
+    $('.eye').click(function () {
+        $(this).siblings('.main-item__body-tel').attr('style', 'cursor: pointer');
+        $(this).siblings('.main-item__body-tel').children('.tel-number').show();
+        $(this).siblings('.no-answer').show();
+        $(this).siblings('.tel-dots').hide();
+        $(this).hide();
+    })
+
+
 });
 
 

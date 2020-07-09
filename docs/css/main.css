@@ -1163,6 +1163,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   color: #038dc6;
+  cursor: default;
 }
 
 .main-item__body-tel::before {
@@ -1175,12 +1176,29 @@ a {
   background: url("../img/svg/tel.svg") center no-repeat;
 }
 
-.main-item__body-tel:hover {
-  text-decoration: underline;
+.main-item__body a:hover {
+  text-decoration: none;
+}
+
+.main-item__body .eye {
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.main-item__body .tel-number {
+  display: none;
+}
+
+.main-item__body .tel-dots {
+  margin-left: 0;
+  color: #e0e0e0;
+}
+
+.main-item__body .no-answer {
+  display: none;
 }
 
 .main-item__body span {
-  margin-left: 12px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -1396,6 +1414,18 @@ a {
   background-color: #333;
 }
 
+.main-item--yellow .tel-dots {
+  color: #fff;
+}
+
+.main-item--yellow .tel-number {
+  color: #333;
+}
+
+.main-item--yellow svg path {
+  fill: #333333;
+}
+
 .main-item--blue {
   color: #ffffff;
   background: #038dc6;
@@ -1430,6 +1460,14 @@ a {
 
 .main-item--blue .menu-dots span {
   background-color: #fff;
+}
+
+.main-item--blue .tel-number {
+  color: #fff;
+}
+
+.main-item--blue svg path {
+  fill: #fff;
 }
 
 .menu-dots {
