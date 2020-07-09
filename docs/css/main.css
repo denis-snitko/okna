@@ -1609,6 +1609,62 @@ a {
 
 /* End Footer */
 
+/* Sub-footer */
+
+.sub-footer {
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  display: none;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.sub-footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sub-footer button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #333333;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.sub-footer .calc-btn,
+.sub-footer .feedback-btn {
+  height: 35px;
+  padding: 7px 15px;
+  border-radius: 15px;
+}
+
+.sub-footer .calc-btn {
+  background-color: #FFCB2D;
+}
+
+.sub-footer .up-btn,
+.sub-footer .filter-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+/* End Sub-footer */
+
 /* END MAIN STYLES */
 
 @media screen and (max-width: 1200px) {
@@ -1645,6 +1701,7 @@ a {
   }
 
   .header__search {
+    width: 370px;
     margin-right: 0;
   }
 
@@ -1695,7 +1752,7 @@ a {
 
   .main-filter {
     position: fixed;
-    z-index: 20;
+    z-index: 2000;
     top: 73px;
     right: 0;
     width: 330px;
@@ -1779,6 +1836,14 @@ a {
   }
 
   .menu-dots {
+    display: block;
+  }
+
+  .footer {
+    padding-bottom: 80px;
+  }
+
+  .sub-footer {
     display: block;
   }
 }

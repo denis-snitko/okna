@@ -16,6 +16,7 @@ jQuery(function ($) {
     });
 
     $(".main-filter__item-title").click(function () {
+        $('.main-filter__links').hide();
         $(this).next().fadeToggle(150);
     })
 
