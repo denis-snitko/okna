@@ -18,6 +18,14 @@ jQuery(function ($) {
     $(".main-filter__item-title").click(function () {
         $(this).next().fadeToggle(150);
     })
+
+    $('.menu-dots').click(function () {
+        $(this).children('.menu-dots__list').fadeToggle(150);
+    })
+
+    $('.burger-menu-icon').click(function () {
+        $('.content-body__col-3').fadeToggle(150);
+    })
 });
 
 
@@ -39,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 548: {
                     slidesPerView: 6,
                     spaceBetween: 5,
-                    centeredSlides: false,
+                    centeredSlides: false
                 },
             }
         });

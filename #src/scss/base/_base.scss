@@ -151,6 +151,11 @@ a {
         display: flex;
         justify-content: space-between;
         text-align: center;
+
+        @include lg-block() {
+            overflow: hidden;
+            border-radius: 20px;   
+        }
     }
 
     ul.tabs__nav li {
@@ -165,6 +170,9 @@ a {
         overflow: hidden;
         transition: all 0.2s linear;
         cursor: pointer;
+
+
+        
     }
 
     ul.tabs__nav li:hover {
