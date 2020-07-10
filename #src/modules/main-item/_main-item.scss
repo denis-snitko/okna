@@ -80,6 +80,12 @@
         }
     }
 
+    &__header-stars {
+        @include sm-block() {
+            display: none;
+        }
+    }
+
     // .main-item__header-btn
 
     &__header-btn {
@@ -349,6 +355,24 @@
             background: url("../img/svg/counter.svg") center no-repeat;
         }
     }
+
+    .mobile-stars {
+        @include sm-block() {
+            display: flex;
+        }
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 13px 0;
+        padding-right: 15px;
+
+        border-bottom: 1px solid #e0e0e0;
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 .main-item--yellow {
@@ -396,10 +420,6 @@
     .tel-number {
         color: #333;
     }
-
-    svg path {
-        fill: #333333;
-    }
 }
 
 .main-item--blue {
@@ -442,9 +462,15 @@
         color: #fff;
     }
 
-    svg path {
-        fill: #fff;
+  
+  
+
+
+    .reviews-btn {
+        color: #038dc6;
     }
+
+   
 }
 
 .menu-dots {

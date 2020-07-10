@@ -256,3 +256,16 @@ a {
 .accordeon__title--active::after {
     transform: rotate(90deg);
 }
+
+.reviews-btn {
+    padding: 6px 17px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #038dc6;
+
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
