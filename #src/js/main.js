@@ -36,6 +36,9 @@ jQuery(function ($) {
         $(this).hide();
     })
 
+    $('.up-btn').click(function () {
+        $('html').animate({ scrollTop: 0 }, 600);
+    })
 
 });
 

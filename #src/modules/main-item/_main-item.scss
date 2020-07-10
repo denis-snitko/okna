@@ -60,6 +60,10 @@
     &__header-title {
         margin-bottom: 28px;
 
+        @include sm-block() {
+            line-height: 22px;
+        }
+
         a {
             font-weight: bold;
             font-size: 22px;
@@ -68,6 +72,10 @@
 
             &:hover {
                 text-decoration: underline;
+            }
+
+            @include sm-block() {
+                font-size: 18px;
             }
         }
     }
@@ -133,11 +141,11 @@
             margin-left: 6px;
             cursor: pointer;
         }
-        
+
         .tel-number {
             display: none;
         }
-        
+
         .tel-dots {
             margin-left: 0;
             color: #e0e0e0;

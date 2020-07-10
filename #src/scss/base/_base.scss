@@ -12,6 +12,10 @@ body {
     flex: 1 1 auto;
     padding-top: 20px;
     padding-bottom: 80px;
+
+    @include md-block() {
+        padding-bottom: 25px;
+    }
 }
 
 a {
@@ -153,8 +157,9 @@ a {
         text-align: center;
 
         @include lg-block() {
+            margin-bottom: 20px;
+            border-radius: 20px;
             overflow: hidden;
-            border-radius: 20px;   
         }
     }
 
@@ -170,9 +175,6 @@ a {
         overflow: hidden;
         transition: all 0.2s linear;
         cursor: pointer;
-
-
-        
     }
 
     ul.tabs__nav li:hover {
@@ -199,6 +201,10 @@ a {
 
 .accordeon {
     text-align: left;
+
+    @include lg-block() {
+        border-top: 1px solid #e0e0e0;
+    }
 
     &__title {
         position: relative;

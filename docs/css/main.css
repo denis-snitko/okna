@@ -417,36 +417,20 @@ summary {
 /* Typography */
 
 body {
+  font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
-  font-family: "Lato";
   color: #333333;
 }
 
 h1 {
   padding-bottom: 40px;
+  font-family: "Gilroy";
   font-weight: 600;
   font-size: 36px;
   line-height: 43px;
-  font-family: "Gilroy";
   color: #333333;
 }
-
-/*
-h2 {
-    font-size: 36px;
-    line-height: $base-line-height * 2;
-    margin-bottom: $base-line-height;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 24px;
-    line-height: $base-line-height;
-    margin-bottom: $base-line-height;
-    font-weight: bold;
-}
-*/
 
 /* End Typography */
 
@@ -1729,8 +1713,13 @@ a {
   }
 
   .tabs .tabs__nav {
-    overflow: hidden;
+    margin-bottom: 20px;
     border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .accordeon {
+    border-top: 1px solid #e0e0e0;
   }
 
   .header__logo {
@@ -1799,10 +1788,15 @@ a {
     right: 0;
     width: 330px;
     padding: 15px;
+    border-radius: 5px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .main-content {
+    padding-bottom: 25px;
+  }
+
   .bread-crumbs {
     display: none;
   }
@@ -1821,7 +1815,7 @@ a {
   }
 
   .s-block-text {
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 40px;
   }
 
@@ -1862,6 +1856,14 @@ a {
 
   .main-item {
     padding-bottom: 20px;
+  }
+
+  .main-item__header-title {
+    line-height: 22px;
+  }
+
+  .main-item__header-title a {
+    font-size: 18px;
   }
 
   .main-item__header-btn {
