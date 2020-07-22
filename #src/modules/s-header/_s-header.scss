@@ -27,11 +27,20 @@
             height: 60px;
 
             @include lg-block() {
-                width: 177px;
-                height: 29px;
+                display: none;
+            }
+        }
+
+        .logo__img-mobile {
+            display: none;
+            width: 178px;
+
+            @include lg-block() {
+                display: block;
             }
         }
     }
+
 
     &__region {
         position: absolute;
@@ -41,8 +50,12 @@
         font-size: 14px;
         line-height: 17px;
 
-        border-bottom: 1px solid  #038dc6;
         color: #038dc6;
+        border-bottom: 1px solid  #038dc6;
+
+        @include lg-block() {
+            display: none;
+        }
     }
 
     // .header__search

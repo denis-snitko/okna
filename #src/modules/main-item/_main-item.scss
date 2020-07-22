@@ -248,8 +248,8 @@
         }
 
         a {
-            color: inherit;
             font-weight: inherit;
+            color: inherit;
 
         }
 
@@ -267,6 +267,16 @@
                 height: 92px;
                 border-radius: 10px;
                 object-fit: cover;
+
+                @media (max-width: 700px) {
+                    width: 75px;
+                    height: 70px;
+                }
+                
+                @media (max-width: 380px) {
+                    width: 88px;
+                    height: 82px;
+                }
             }
         }
 

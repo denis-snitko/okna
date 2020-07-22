@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
 
             breakpoints: {
-                548: {
+                540: {
                     slidesPerView: 6,
                     spaceBetween: 5,
                     centeredSlides: false
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
-    let accordeonTitle = document.querySelectorAll('.accordeon__title');
+    let accordeonTitle = document.querySelectorAll('.accordeon__title:after');
 
     accordeonTitle.forEach((section) => {
         section.addEventListener('click', (event) => {

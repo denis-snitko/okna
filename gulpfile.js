@@ -158,7 +158,7 @@ const options = {
     },
     breakPoints: {
         xs: {
-            width: "320px" // 20rem
+            width: "420px" // 20rem
         },
         sm: {
             width: "576px" // 36rem
