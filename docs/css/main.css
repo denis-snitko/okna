@@ -427,7 +427,7 @@ h1 {
   padding-bottom: 40px;
   font-family: "Gilroy";
   font-weight: 600;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 43px;
   color: #333333;
 }
@@ -719,12 +719,24 @@ a {
 }
 
 .header__logo {
+  position: relative;
   margin-right: 42px;
 }
 
 .header__logo .logo__img {
   width: 260px;
   height: 60px;
+}
+
+.header__region {
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 80px;
+  font-size: 14px;
+  line-height: 17px;
+  border-bottom: 1px solid  #038dc6;
+  color: #038dc6;
 }
 
 .header__search {
@@ -761,9 +773,9 @@ a {
 }
 
 .header__hot-line span {
+  font-family: "Gilroy";
   font-weight: 600;
   font-size: 16px;
-  font-family: "Gilroy";
   white-space: nowrap;
   color: inherit;
   border-bottom: 1px solid #e31738;
@@ -1084,11 +1096,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-bottom: 15px;
   border-bottom: 1px solid #e0e0e0;
+}
+
+.main-item__header-inner {
+  width: 100%;
 }
 
 .main-item__header-logo {
@@ -1268,9 +1281,14 @@ a {
 
 .main-item__swiper h3 {
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   color: #333333;
+}
+
+.main-item__swiper a {
+  color: inherit;
+  font-weight: inherit;
 }
 
 .main-item__swiper .swiper-container {
@@ -1345,6 +1363,10 @@ a {
 .main-item__base-btn:hover {
   color: #ffffff;
   background-color: #4f4f4f;
+}
+
+.main-item__base-btn span {
+  padding-left: 10px;
 }
 
 .main-item__counter {
@@ -1542,6 +1564,18 @@ a {
   font-weight: bold;
   font-size: 14px;
   color: #333333;
+}
+
+.stars-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* End Main-item */
