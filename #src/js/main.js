@@ -24,8 +24,16 @@ jQuery(function ($) {
         $(this).children('.menu-dots__list').fadeToggle(150);
     })
 
-    $('.burger-menu-icon').click(function () {
+    $('.filter-icon').click(function () {
         $('.content-body__col-3').fadeToggle(150);
+    })
+
+    $('.filter-btn').click(function () {
+        $('.content-body__col-3').fadeToggle(150);
+    })
+    
+    $('.close-btn').click(function () {
+        $('.content-body__col-3').attr('style', '');
     })
 
     $('.eye').click(function () {

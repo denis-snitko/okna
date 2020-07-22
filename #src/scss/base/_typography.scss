@@ -13,4 +13,9 @@ h1 {
     line-height: 43px;
 
     color: #333333;
+
+    @include md-block() {
+        max-width: 85%;
+        line-height: 30px;
+    }
 }
