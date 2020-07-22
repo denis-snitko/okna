@@ -15,7 +15,7 @@ jQuery(function ($) {
         $(".tab-accordeon[data-tab^='" + activeTab + "']").addClass("tab-accordeon--active");
     });
 
-    $(".main-filter__item-title").click(function () {
+    $(".main-filter__arrow").click(function () {
         $('.main-filter__links').hide();
         $(this).next().fadeToggle(150);
     })
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
-    let accordeonTitle = document.querySelectorAll('.accordeon__title:after');
+    let accordeonTitle = document.querySelectorAll('.accordeon__title');
 
     accordeonTitle.forEach((section) => {
         section.addEventListener('click', (event) => {

@@ -237,6 +237,10 @@ a {
         &:first-child {
             border-top: 1px solid transparent;
         }
+
+        a {
+            color: inherit;
+        }
     }
 
     &__list {

@@ -16,19 +16,33 @@
     }
 
     &__item {
+        position: relative;
+
         padding-left: 10px;
         padding-bottom: 14px;
         font-weight: 600;
     }
 
     .main-filter__item-title {
+        color: inherit;
         transition: all .2s linear;
         
-        cursor: pointer;
-
+        
         &:hover {
             color: $base-blue;
         }
+    }
+
+    .main-filter__arrow {
+        position: absolute;
+        top: 3px;
+        right: 5px;
+        width: 6px;
+        height: 12px;
+        
+        background: url(../img/svg/big-arrow-right.svg) center no-repeat;
+        transform: rotate(90deg);
+        cursor: pointer;
     }
 
     &__links {
