@@ -189,16 +189,22 @@ a {
         background-color: $base-blue;
     }
 
+    
+
     .tabs__container {
         width: 100%;
-        height: 100vh;
         background: #fff;
-        overflow-x: hidden;
     }
 
     .tab__content {
         display: none;
     }
+}
+
+.tabs-wrapper {
+    height: 100%;
+    padding-bottom: 40px;
+    overflow-x: hidden;
 }
 
 .accordeon {

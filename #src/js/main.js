@@ -26,14 +26,17 @@ jQuery(function ($) {
 
     $('.filter-icon').click(function () {
         $('.content-body__col-3').fadeToggle(150);
+        $('body').attr('style', 'overflow: hidden');
     })
 
     $('.filter-btn').click(function () {
         $('.content-body__col-3').fadeToggle(150);
+        $('body').attr('style', 'overflow: hidden');
     })
     
     $('.close-btn').click(function () {
         $('.content-body__col-3').attr('style', '');
+        $('body').attr('style', 'overflow: auto');
     })
 
     $('.eye').click(function () {
