@@ -1,4 +1,8 @@
 jQuery(function ($) {
+    $('.burger-menu-icon').click(function() {
+        $('.main-menu').fadeToggle(150);
+    })
+
     $(".tab__content").hide();
     $(".tab__content:first").show();
 

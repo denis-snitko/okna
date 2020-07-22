@@ -231,6 +231,18 @@
     }
 }
 .main-menu {
+    @include lg-block() {
+        position: relative;
+        z-index: 500;
+        top: 0;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        // height: 100%;
+
+        background-color: #fff;
+    }
     // .main-menu__list
 
     &__list {
@@ -243,7 +255,7 @@
         white-space: nowrap;
 
         @include lg-block() {
-            overflow-x: scroll;
+            flex-direction: column;
         }
     }
 
@@ -260,6 +272,21 @@
 
             &:hover {
                 color: $base-blue;
+            }
+        }
+
+        @include lg-block() {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #F2F2F2;
+            
+            &:last-child {
+                
+                border-bottom: 1px solid transparent;
+            }
+
+            a {
+                font-size: 18px;
             }
         }
     }

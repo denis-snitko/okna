@@ -1901,8 +1901,35 @@ a {
     display: none;
   }
 
+  .main-menu {
+    position: relative;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+  }
+
   .main-menu__list {
-    overflow-x: scroll;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .main-menu__item {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #F2F2F2;
+  }
+
+  .main-menu__item:last-child {
+    border-bottom: 1px solid transparent;
+  }
+
+  .main-menu__item a {
+    font-size: 18px;
   }
 
   .burger-menu-icon {
