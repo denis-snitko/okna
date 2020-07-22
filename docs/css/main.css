@@ -714,7 +714,7 @@ a {
   display: none;
   width: 26px;
   height: 24px;
-  background: url("../../img/svg/filter.svg");
+  background: url("../img/svg/filter.svg");
   background-repeat: no-repeat;
   cursor: pointer;
 }
