@@ -7,6 +7,10 @@
         align-items: center;
         justify-content: space-between;
         padding: 19px 0;
+
+        @include sm-block() {
+            padding-bottom: 16px;
+        }
     }
 
     // .header__logo
@@ -41,7 +45,6 @@
         }
     }
 
-
     &__region {
         position: absolute;
         z-index: 5;
@@ -51,7 +54,7 @@
         line-height: 17px;
 
         color: #038dc6;
-        border-bottom: 1px solid  #038dc6;
+        border-bottom: 1px solid #038dc6;
 
         @include lg-block() {
             display: none;
@@ -144,9 +147,9 @@
             left: 28px;
 
             @include lg-block() {
-                top: -7px;
+                top: -17px;
                 width: 20px;
-                height: 24px;
+                height: 30px;
             }
         }
     }
@@ -166,9 +169,9 @@
             left: -21px;
 
             @include lg-block() {
-                top: -7px;
+                top: -17px;
                 width: 20px;
-                height: 24px;
+                height: 30px;
             }
         }
 
@@ -277,10 +280,9 @@
         @include lg-block() {
             padding: 15px;
             text-align: center;
-            border-bottom: 1px solid #F2F2F2;
-            
+            border-bottom: 1px solid #f2f2f2;
+
             &:last-child {
-                
                 border-bottom: 1px solid transparent;
             }
 
@@ -311,7 +313,7 @@
 
     span {
         position: absolute;
-        top: 50%;
+        top: 9px;
         display: inline-block;
 
         width: 38px;
@@ -321,7 +323,6 @@
         background-color: $base-blue;
 
         outline: none;
-        transform: translateY(-50%);
         cursor: pointer;
 
         &::before,
@@ -337,10 +338,10 @@
         }
 
         &::before {
-            top: -15px;
+            top: -10px;
         }
         &::after {
-            bottom: -15px;
+            bottom: -10px;
         }
     }
 }
