@@ -1280,7 +1280,6 @@ a {
 .main-item__body-links {
   position: relative;
   max-width: 540px;
-  max-height: 56px;
   margin: 12px 0;
   padding-left: 25px;
   overflow: hidden;

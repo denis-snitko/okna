@@ -61,7 +61,8 @@ jQuery(function ($) {
 
     $($bodyLinks).each(function () {
 
-        if ($(this).children('a').length > 18) {
+        if ($(this).height() >= 56) {
+            $(this).attr('style', 'max-height: 56px');
             $(this).next($showMore).show();
         }
 
