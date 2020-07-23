@@ -188,18 +188,33 @@
     &__body-links {
         position: relative;
         max-width: 540px;
+        max-height: 56px;
+
         margin: 12px 0;
         padding-left: 25px;
+
+        overflow: hidden;
 
         &::before {
             content: "";
             position: absolute;
-            top: 2px;
+            top: 0;
             left: 0;
             width: 14px;
             height: 20px;
             background: url("../img/svg/map-badge.svg") center no-repeat;
         }
+    }
+
+    &__show-more {
+        display: none;
+        position: relative;
+        top: -11px;
+        left: 18px;
+        color: $base-blue;
+        background: transparent;
+        border: none;
+        cursor: pointer;
     }
 
     &__sale {
@@ -251,7 +266,6 @@
         a {
             font-weight: inherit;
             color: inherit;
-
         }
 
         .swiper-container {
@@ -273,7 +287,7 @@
                     width: 75px;
                     height: 70px;
                 }
-                
+
                 @media (max-width: 380px) {
                     width: 88px;
                     height: 82px;
@@ -445,6 +459,10 @@
     .tel-number {
         color: #333;
     }
+
+    .main-item__show-more {
+        color: #333;
+    }
 }
 
 .main-item--blue {
@@ -487,15 +505,13 @@
         color: #fff;
     }
 
-  
-  
-
-
     .reviews-btn {
         color: #038dc6;
     }
 
-   
+    .main-item__show-more {
+        color: #fff;
+    }
 }
 
 .menu-dots {

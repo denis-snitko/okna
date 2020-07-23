@@ -1,5 +1,5 @@
 jQuery(function ($) {
-    $('.burger-menu-icon').click(function() {
+    $('.burger-menu-icon').click(function () {
         $('.main-menu').fadeToggle(150);
     })
 
@@ -37,7 +37,7 @@ jQuery(function ($) {
         $('.content-body__col-3').fadeToggle(150);
         $('body').attr('style', 'overflow: hidden');
     })
-    
+
     $('.close-btn').click(function () {
         $('.content-body__col-3').attr('style', '');
         $('body').attr('style', 'overflow: auto');
@@ -55,6 +55,21 @@ jQuery(function ($) {
         $('html').animate({ scrollTop: 0 }, 600);
     })
 
+    //show more links
+    let $bodyLinks = $('.main-item__body-links');
+    let $showMore = $('.main-item__show-more');
+
+    $($bodyLinks).each(function () {
+
+        if ($(this).children('a').length > 18) {
+            $(this).next($showMore).show();
+        }
+
+        $(this).next($showMore).click(function () {
+            $(this).prev($bodyLinks).attr('style', 'height: 100%; max-height: 100%');
+            $(this).hide();
+        })
+    })
 });
 
 
