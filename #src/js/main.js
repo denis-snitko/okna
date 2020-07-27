@@ -20,7 +20,7 @@ jQuery(function ($) {
     });
 
     $(".main-filter__arrow").click(function () {
-        $('.main-filter__links').hide();
+        // $('.main-filter__links').show();
         $(this).next().fadeToggle(150);
     })
 
@@ -102,12 +102,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     accordeonTitle.forEach((section) => {
         section.addEventListener('click', (event) => {
-            accordeonTitle.forEach((section) => {
-                section.nextElementSibling.classList.add('hidden');
-                section.classList.remove('active-bg');
-                section.classList.remove('accordeon__title--active');
+            // accordeonTitle.forEach((section) => {
+            //     section.nextElementSibling.classList.add('hidden');
+            //     section.classList.remove('active-bg');
+            //     section.classList.remove('accordeon__title--active');
 
-            })
+            // })
             event.target.nextElementSibling.classList.toggle('hidden');
             event.target.classList.toggle('active-bg');
             event.target.classList.toggle('accordeon__title--active');
