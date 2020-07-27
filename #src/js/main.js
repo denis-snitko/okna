@@ -60,7 +60,6 @@ jQuery(function ($) {
     let $showMore = $('.main-item__show-more');
 
     $($bodyLinks).each(function () {
-console.log($(this).height());
         if ($(this).height() >= 56) {
             $(this).attr('style', 'height: 56px');
             $(this).next($showMore).show();

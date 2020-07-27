@@ -590,4 +590,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .main-item__counter {
+        @include sm-block {
+            display: none;
+        }
+    }
 }

@@ -2083,6 +2083,10 @@ a {
     display: block;
   }
 
+  .stars-wrapper .main-item__counter {
+    display: none;
+  }
+
   .footer {
     padding-bottom: 80px;
   }
