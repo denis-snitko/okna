@@ -290,6 +290,39 @@
                 font-size: 18px;
             }
         }
+
+        &--region,
+        &--sign {
+            display: none;
+
+            a {
+                color: $base-blue;
+            }
+        }
+
+        &--region {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include lg-block() {
+                display: flex;
+
+                span {
+                    font-weight: 600;
+                }
+
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &--sign {
+            @include lg-block() {
+                display: block;
+            }
+        }
     }
 }
 
