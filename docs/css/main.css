@@ -933,6 +933,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1168,6 +1172,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .main-item__header-inner {
@@ -1233,6 +1238,7 @@ a {
 .main-item__body {
   padding-top: 16px;
   padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .main-item__body-tel {
@@ -1329,6 +1335,7 @@ a {
   position: relative;
   padding: 18px 0;
   padding-left: 25px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .main-item__sale::before {
@@ -1357,6 +1364,7 @@ a {
 .main-item__swiper {
   position: relative;
   padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .main-item__swiper h3 {
@@ -1485,6 +1493,7 @@ a {
           justify-content: space-between;
   padding: 13px 0;
   padding-right: 15px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .main-item .mobile-stars a:hover {
@@ -1977,6 +1986,7 @@ a {
   }
 
   .main-menu__item--region a {
+    font-weight: 400;
     font-size: 14px;
   }
 
@@ -2096,6 +2106,11 @@ a {
 
   .main-item__header-btn {
     display: none;
+  }
+
+  .main-item__swiper--last {
+    padding-bottom: 0;
+    border-bottom: none;
   }
 
   .main-item__swiper .swiper-button-prev,
