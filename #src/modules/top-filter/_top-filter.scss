@@ -1,7 +1,7 @@
 .top-filter {
-    margin-bottom: 27px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 
     @include md-block() {
         display: none;
