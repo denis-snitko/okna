@@ -651,7 +651,7 @@ a {
   right: 30px;
   width: 6px;
   height: 12px;
-  background: url("../img/svg/big-arrow-right.svg") center no-repeat;
+  background: url("../img/svg/arrow-right.svg") center no-repeat;
 }
 
 .accordeon__title:hover {
@@ -1064,7 +1064,7 @@ a {
   padding: 0 20px 0 10px;
   font-weight: 500;
   color: #038dc6;
-  background: url("../img/svg/arrow-top.svg") right center no-repeat;
+  background: url("../img/svg/arrow-down.svg") right center no-repeat;
   border: none;
   -webkit-appearance: none;
      -moz-appearance: none;
