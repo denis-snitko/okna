@@ -4,4 +4,52 @@
   background: #ffffff;
   border-radius: 5px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+
+  a {
+    color: #038dc6;
+  }
+}
+
+.s-article-item {
+  &__date {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #828282;
+  }
+
+  img {
+    width: 100%;
+    max-width: 670px;
+    height: 235px;
+    margin-bottom: 35px;
+    border-radius: 2px;
+    object-fit: cover;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__tags {
+    padding: 12px 0;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333333;
+
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+
+    a {
+      margin-left: 10px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+
+  &__company {
+    padding-top: 15px;
+    font-weight: 600;
+    font-size: 16px;
+  }
 }
