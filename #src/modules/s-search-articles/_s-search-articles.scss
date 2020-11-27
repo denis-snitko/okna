@@ -1,0 +1,33 @@
+.s-search-articles {
+  padding-bottom: 30px;
+
+  &__form {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    input {
+      flex-shrink: 1;
+      width: 100%;
+      max-width: 100%;
+      height: 40px;
+      margin-right: 5px;
+      padding: 10px 21px;
+
+      font-weight: 400;
+      font-size: 14px;
+
+      color: #4b4b4b;
+
+      border: 1px solid #e0e0e0;
+      border-radius: 2px;
+    }
+    button {
+      width: 80px;
+      height: 40px;
+      background-color: #038dc6;
+      border: none;
+      border-radius: 2px;
+    }
+  }
+}
