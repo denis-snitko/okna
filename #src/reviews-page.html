@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./css/main.css">
-    <title>Статьи</title>
+    <title>Отзывы</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
             <div class="container">
                 <ul class="bread-crumbs__list">
                     <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Окна.рф</a></li>
-                    <li class="bread-crumbs__item">Статьи</li>
+                    <li class="bread-crumbs__item">Отзывы</li>
                 </ul>
             </div>
         </div>
@@ -36,29 +36,16 @@
             <div class="container">
                 <div class="title-body">
                     <h1 class="main-title">
-                        Статьи об окнах ПВХ, выборе пластиковых окон, о ценовых
-                        и технических характеристиках окон
+                        Пластиковые окна: отзывы о качестве и оконных компаниях Москвы
                     </h1>
-                    <div class="filter-icon">
-                        <!-- filter-icon -->
-                    </div>
                 </div>
                 <div class="content-body">
 
-                    <!-- Articles Search -->
-                    @@include('modules/s-search-articles/_s-search-articles.html')
-                    <!-- End Articles Search -->
-
                     <div class="content-body__row">
-                        <div class="content-body__col-3">
-                            <!-- s-articles-aside -->
-                            @@include('modules/s-articles-aside/_s-articles-aside.html')
-                            <!-- End s-articles-aside -->
-                        </div>
-                        <div class="content-body__col-7">
-                            <!-- base-articles -->
-                            @@include('modules/base-articles/_base-articles.html')
-                            <!-- End base-articles -->
+                        <div class="content-body__col-10">
+                            <!-- s-reviews -->
+                            @@include('modules/s-reviews/_s-reviews.html')
+                            <!-- End s-reviews -->
                         </div>
                         <div class="content-body__col-2">
                             <!-- Banners-body -->
@@ -68,6 +55,13 @@
                     </div>
                 </div>
             </div>
+
+            <div class="reviews-feedback">
+                <div class="container">
+                    @@include('modules/s-reviews/_reviews-feedback.html')
+                </div>
+            </div>
+
         </main>
         <!-- End Main-content -->
 

@@ -118,6 +118,7 @@ a {
 
     &__col-3,
     &__col-7,
+    &__col-10,
     &__col-2 {
         @include col();
     }
@@ -135,6 +136,11 @@ a {
     &__col-7 {
         @include size(7);
         @include size-xl(8.5);
+        @include size-lg(12);
+    }
+
+    &__col-10 {
+        @include size(10.5);
         @include size-lg(12);
     }
 
