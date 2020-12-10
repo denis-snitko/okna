@@ -727,6 +727,21 @@ a {
   margin-left: auto;
 }
 
+.empty-basket .main-title {
+  margin-top: 50px;
+  font-size: 36px;
+}
+
+.empty-basket__bread-crumbs {
+  margin-top: 38px;
+}
+
+.empty-basket__warning {
+  font-weight: 600;
+  font-size: 20px;
+  color: #202020;
+}
+
 /* End Base styles */
 
 /* MAIN STYLES */

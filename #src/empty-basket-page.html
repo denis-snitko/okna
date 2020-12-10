@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Пустая корзина</title>
+</head>
+
+<body>
+    <div class="main-body">
+        <!-- Header -->
+        @@include('modules/s-header/_s-header.html')
+        <!-- End Header -->
+
+        <!-- Bread-crumbs -->
+        <div class="bread-crumbs empty-basket__bread-crumbs">
+            <div class="container">
+                <ul class="bread-crumbs__list">
+                    <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Окна.рф</a></li>
+                    <li class="bread-crumbs__item">Корзина</li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Bread-crumbs -->
+
+
+        <!-- Main-content -->
+        <main class="main-content">
+
+            <div class="empty-basket">
+                <div class="container">
+                    <div class="title-body">
+                        <h1 class="main-title">Корзина</h1>
+                    </div>
+                    <div class="empty-basket__warning">В корзине ничего нет</div>
+                </div>
+            </div>
+
+        </main>
+        <!-- End Main-content -->
+
+
+        <!-- Footer -->
+        @@include('modules/s-footer/_s-footer.html')
+        <!-- End Footer -->
+
+        <!-- Sub-footer -->
+        @@include('modules/sub-footer/_s-sub-footer.html')
+        <!-- End Sub-footer -->
+
+    </div>
+    <script src="./js/vendors.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
