@@ -122,7 +122,9 @@ a {
     }
 
     &__col-3,
+    &__col-4,
     &__col-7,
+    &__col-8,
     &__col-10,
     &__col-2 {
         @include col();
@@ -135,12 +137,21 @@ a {
             display: none;
         }
     }
+    
+    &__col-4 {
+        @include size(4);
+    }
 
     // .content-body__col-7
 
     &__col-7 {
         @include size(7);
         @include size-xl(8.5);
+        @include size-lg(12);
+    }
+
+    &__col-8 {
+        @include size(8);
         @include size-lg(12);
     }
 
