@@ -1,16 +1,143 @@
 .s-calc-main {
-    padding: 40px 70px 43px 60px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px 70px 0 60px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+
+  &__title {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #0b0b0b;
+  }
+
+  &__sub {
+    margin-bottom: 17px;
+
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  &__images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #e0e0e0;
+
+    img {
+      cursor: pointer;
+    }
+  }
 }
 
 .s-calc-aside {
-    padding-bottom: 38px;
-    border-bottom: 1px solid #E0E0E0;
-    
-    .basket-item {
-        padding-top: 38px;
-        border-top: 1px solid #E0E0E0;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #e0e0e0;
+
+  .basket-item {
+    margin-top: 35px;
+    padding-top: 35px;
+    border-top: 1px solid #e0e0e0;
+
+    &--hide {
+      display: none;
     }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 2.5px 13px rgba(171, 171, 171, 0.25);
+  }
+
+  &__price {
+    width: 80%;
+    height: 100%;
+    font-weight: 600;
+    font-size: 18px;
+
+    color: #ffffff;
+
+    background-color: #038dc6;
+    border: none;
+  }
+
+  &__or {
+    width: 20%;
+    height: 100%;
+
+    border: none;
+  }
+}
+
+.company-advantages {
+  margin-bottom: 70px;
+  padding-top: 50px;
+
+  &__title {
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 22px;
+    color: #202020;
+  }
+
+  &__body {
+    padding: 35px 27px;
+  }
+
+  &__list {
+    font-size: 18px;
+    color: #202020;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    span {
+      display: inline-block;
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+      padding: 4px;
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+      border: 2px solid #038dc6;
+      border-radius: 50%;
+    }
+  }
+}
+
+.review-block {
+  &__row {
+    @include row-flex();
+  }
+
+  &__col {
+    @include col();
+    @include size(6);
+    @include size-md(12);
+    margin-bottom: 25px;
+  }
+
+  &__more {
+    display: block;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: right;
+    color: #038dc6;
+  }
 }
