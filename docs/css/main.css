@@ -2964,6 +2964,11 @@ a {
 }
 
 @media screen and (max-width: 992px) {
+  .main-content--actions .content-body__col-7,
+  .main-content--actions .content-body__col-2 {
+    padding-top: 0;
+  }
+
   .content-body__col-3 {
     display: none;
   }
@@ -3179,6 +3184,11 @@ a {
     font-size: 14px;
   }
 
+  .s-all-actions__main-title {
+    margin-top: 26px;
+    margin-bottom: 24px;
+  }
+
   .review-block__col {
     width: calc(100% - 30px);
   }
@@ -3258,6 +3268,39 @@ a {
 
   .sub-footer {
     display: block;
+  }
+
+  .article__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .article__body img {
+    width: 100%;
+    height: 150px;
+    margin-top: 7px;
+    margin-right: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .article__date {
+    text-align: right;
+  }
+
+  .article__title {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .article__text:first-child {
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .article-sale__activity {
+    display: none;
   }
 }
 
