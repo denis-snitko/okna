@@ -29,6 +29,10 @@
 
   &__stars {
     margin-left: auto;
+
+    @include sm-block() {
+      display: block;
+    }
   }
 
   &__title {
@@ -75,25 +79,50 @@
     align-items: center;
     padding-bottom: 15px;
     border-bottom: 1px solid #e0e0e0;
+
+    @include sm-block() {
+      flex-wrap: wrap;
+    }
   }
 
   &__name {
     margin-right: 48px;
     font-weight: 700;
+
+    
+    @include sm-block() {
+      flex-grow: 1;
+    }
   }
   &__prof {
     margin-right: 48px;
     font-weight: 500;
     font-size: 14px;
+    
+    
+    @include sm-block() {
+      order: 1;
+      margin-top: 8px;
+      margin-right: 0;
+      font-size: 12px;
+    }
   }
 
   &__date {
     font-weight: 500;
+
+    @include sm-block() {
+      font-size: 12px;
+    }
   }
 
   &__text {
     padding-top: 25px;
     padding-bottom: 10px;
+
+    @include sm-block() {
+      font-size: 14px;
+    }
   }
 }
 
@@ -117,6 +146,7 @@
   &__col {
     @include col();
     @include size(6);
+    @include size-sm(12);
   }
 
   label {
@@ -125,6 +155,10 @@
 
     &:last-child {
       margin-bottom: 0;
+
+      @include sm-block() {
+        margin-bottom: 25px;
+      }
     }
   }
 
@@ -146,6 +180,11 @@
     font-size: 16px;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
+    transition: $base-transition;
+
+    &:focus {
+      border: 1px solid #000;
+    }
   }
 
   input {
@@ -155,10 +194,15 @@
     font-size: 16px;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
+    transition: $base-transition;
 
     &::placeholder {
       opacity: 0.5;
       color: #828282;
+    }
+
+    &:focus {
+      border: 1px solid #000;
     }
   }
 
@@ -171,10 +215,19 @@
     resize: none;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
+    transition: $base-transition;
+
+    @include sm-block() {
+      height: 150px;
+    }
 
     &::placeholder {
       opacity: 0.5;
       color: #828282;
+    }
+
+    &:focus {
+      border: 1px solid #000;
     }
   }
 
