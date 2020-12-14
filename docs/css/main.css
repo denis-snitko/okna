@@ -3125,11 +3125,17 @@ a {
     padding: 15px;
     border-radius: 5px;
   }
+
+  .s-article {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
   h1 {
     max-width: 85%;
+    margin-top: 26px;
+    margin-bottom: 24px;
     line-height: 30px;
   }
 
@@ -3182,11 +3188,6 @@ a {
 
   .footer__menu-title {
     font-size: 14px;
-  }
-
-  .s-all-actions__main-title {
-    margin-top: 26px;
-    margin-bottom: 24px;
   }
 
   .review-block__col {
@@ -3268,6 +3269,16 @@ a {
 
   .sub-footer {
     display: block;
+  }
+
+  .base-articles__title {
+    margin-bottom: 25px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .separator {
+    display: none;
   }
 
   .article__body {

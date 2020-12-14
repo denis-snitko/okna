@@ -30,13 +30,6 @@
       margin-bottom: 0;
     }
   }
-
-  &__main-title {
-    @include md-block() {
-      margin-top: 26px;
-      margin-bottom: 24px;
-    }
-  }
 }
 
 .article-sale {

@@ -5,6 +5,10 @@
   border-radius: 5px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 
+  @include lg-block() {
+    margin-top: 0;
+  }
+
   a {
     color: #038dc6;
   }

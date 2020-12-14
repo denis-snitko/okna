@@ -11,6 +11,12 @@
     padding-bottom: 5px;
     border-bottom: 1px solid #e0e0e0;
 
+    @include sm-block() {
+      margin-bottom: 25px;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
     span {
       font-weight: 700;
       font-size: 20px;
@@ -35,6 +41,11 @@
 .separator {
   margin: 35px 0;
   border: 1px solid #e0e0e0;
+
+  
+  @include sm-block() {
+    display: none;
+  }
 }
 
 .article {
