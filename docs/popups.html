@@ -21,6 +21,8 @@
     <li>7. <a href="#popup-calc-3-1" class="open-popup-link">popup-calc-3-1</a></li>
     <li>8. <a href="#popup-calc-3-2" class="open-popup-link">popup-calc-3-2</a></li>
     <li>9. <a href="#popup-calc-3-3" class="open-popup-link">popup-calc-3-3</a></li>
+    <li>10. <a href="#popup-get-price-1" class="open-popup-link">popup-get-price-1</a></li>
+    <li>11. <a href="#popup-get-price-2" class="open-popup-link">popup-get-price-2</a></li>
   </ul>
   
 
@@ -384,9 +386,9 @@
       <div class="popup-form__row">
         <label class="popup-form__label" style="padding-right: 30px;">
           <select>
-            <option value="" selected>Вам нужна доставка?</option>
-            <option value="Да">Да</option>
-            <option value="Нет">Нет</option>
+            <option value="" selected>Способ получения уведомлений?</option>
+            <option value="Да">SMS</option>
+            <option value="Нет">e-mail</option>
           </select>
           <button class="question" type="button">?</button>
         </label>
@@ -398,6 +400,93 @@
       </div>
     </form>
 
+  </div>
+</div>
+  <div id="popup-get-price-1" class="white-popup mfp-hide">
+  <div class="popup-get-price-1 popup">
+    <div class="popup__title">Уточнение параметров расчет стоимости</div>
+    <form action="#" class="popup-form">
+      <div class="popup__descr">Расчет стоимости доставки</div>
+      <div class="popup-form__row">
+        <label class="popup-form__label">
+          <input type="radio" name="radio-1">
+          <span>Не учитывать доставку при расчете стоимости</span>
+        </label>
+        <label class="popup-form__label">
+          <input type="radio" name="radio-1">
+          <span>Учесть доставку при расчете стоимости</span>
+        </label>
+        <label class="popup-form__label">
+          <input type="radio" name="radio-1">
+          <span>Показать цены с возможностью самовывоза</span>
+        </label>
+      </div>
+      <div class="popup-form__row">
+        <label class="popup-form__label popup-form__label--textarea">
+          <select>
+            <option value="" selected>Ваш ближайший населенный пункт</option>
+            <option value="Москва">Москва</option>
+            <option value="Самара">Самара</option>
+          </select>
+        </label>
+      </div>
+      <div class="popup__descr">Доступные скидки</div>
+      <div class="popup-form__row">
+        <label class="popup-form__label">
+          <input type="radio" name="radio-2">
+          <span>Пенсионеры (Пенсионное удостоверение)</span>
+        </label>
+        <label class="popup-form__label">
+          <input type="radio" name="radio-2">
+          <span>Новосёлы (Свидетельство о регистрации прав со сроком до 1 года)</span>
+        </label>
+        <label class="popup-form__label">
+          <input type="radio" name="radio-2">
+          <span>Молодожёны (Свидетельство о браке с датой выдачи до 1 мес.)</span>
+        </label>
+        <label class="popup-form__label">
+          <input type="radio" name="radio-2">
+          <span>Инвалиды (Подтверждающий документ)</span>
+        </label>
+        <label class="popup-form__label">
+          <input type="radio" name="radio-2">
+          <span>Многодетные семьи (Подтверждающий документ)</span>
+        </label>
+      </div>
+      
+      <button type="button" class="header-button feedback-form__header-button">Продолжить</button>
+     
+    </form>
+
+  </div>
+</div>
+  <div id="popup-get-price-2" class="white-popup mfp-hide">
+  <div class="popup-get-price-2 popup">
+    <div class="popup__title">Выберите способ получения цен</div>
+    <a href="#">Рассчитать на калькуляторе
+      <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M22.3627 7.16859L15.3314 0.13734C15.1483 -0.04578 14.8517 -0.04578 14.6686 0.13734C14.4855 0.32046 14.4855 0.617091 14.6686 0.800168L20.8997 7.03126H0.468765C0.209663 7.03126 0 7.24093 0 7.50003C0 7.75913 0.209663 7.96879 0.468765 7.96879H20.8997L14.6686 14.1998C14.4855 14.383 14.4855 14.6796 14.6686 14.8627C14.7601 14.9542 14.8801 15 15 15C15.12 15 15.2399 14.9542 15.3315 14.8627L22.3627 7.83142C22.5458 7.64834 22.5458 7.35171 22.3627 7.16859Z"
+          fill="#038DC6" />
+      </svg>
+    </a>
+    <div class="popup__descr">Моментальный онлайн доступ к ценам на пластиковые окна.</div>
+    <div class="popup__descr">Для заданных Вами окон доступно <strong>11</strong> предложений от <strong>3</strong>
+      компаний.</div>
+
+    <div class="separator"></div>
+
+    <a href="#">Оставить заявку на расчёт
+      <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M22.3627 7.16859L15.3314 0.13734C15.1483 -0.04578 14.8517 -0.04578 14.6686 0.13734C14.4855 0.32046 14.4855 0.617091 14.6686 0.800168L20.8997 7.03126H0.468765C0.209663 7.03126 0 7.24093 0 7.50003C0 7.75913 0.209663 7.96879 0.468765 7.96879H20.8997L14.6686 14.1998C14.4855 14.383 14.4855 14.6796 14.6686 14.8627C14.7601 14.9542 14.8801 15 15 15C15.12 15 15.2399 14.9542 15.3315 14.8627L22.3627 7.83142C22.5458 7.64834 22.5458 7.35171 22.3627 7.16859Z"
+          fill="#038DC6" />
+      </svg>
+    </a>
+    <div class="popup__descr">Вы получите больше предложений от оконных компаний по Вашей заявке в течении 3–х рабочих
+      дней.</div>
+    <div class="popup__descr">Все предложения будут доступны в <strong>Личном кабинете</strong> после регистрации, при
+      которой нужно указать Ваши контакты: имя и телефон/email.</div>
   </div>
 </div>
   <!-- End Popups -->

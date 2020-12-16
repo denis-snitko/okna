@@ -79,16 +79,14 @@
       }
     }
 
-   select {
-    background: url(../img/svg/arrow-down.svg) center no-repeat;
-    background-position-x: 96%;
-    background-position-y: center;
-    appearance: none;
-    cursor: pointer;
+    select {
+      background: url(../img/svg/arrow-down.svg) center no-repeat;
+      background-position-x: 96%;
+      background-position-y: center;
+      appearance: none;
+      cursor: pointer;
+    }
 
-    
-   }
-  
     textarea {
       height: 131px;
       resize: none;
@@ -188,19 +186,19 @@
     border: #ffffff;
 
     &:hover {
-      background-color: rgba(#b8b8b8, .1)
+      background-color: rgba(#b8b8b8, 0.1);
     }
   }
 }
 
-.popup-calc-3-3 { 
+.popup-calc-3-3 {
   .popup__descr {
     margin-bottom: 20px;
   }
 
   .popup-form__label:first-child {
     padding-right: 0;
-}
+  }
 
   .feedback-form__header-button {
     margin: 0 10px;
@@ -212,7 +210,71 @@
     border: #ffffff;
 
     &:hover {
-      background-color: rgba(#b8b8b8, .1)
+      background-color: rgba(#b8b8b8, 0.1);
     }
+  }
+}
+
+.popup-get-price-1 {
+  .popup__descr {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #202020;
+  }
+
+  .popup-form__row {
+    flex-direction: column;
+  }
+
+  .popup-form__label {
+    align-items: center;
+    margin-bottom: 10px;
+    padding-right: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    input[type="radio"] {
+      width: auto;
+      margin: 0;
+      margin-right: 15px;
+    }
+  }
+}
+
+#popup-get-price-2 {
+  max-width: 524px;
+}
+
+.popup-get-price-2 {
+  .popup__descr {
+    margin-bottom: 10px;
+  }
+
+  a {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-right: 42px;
+    font-size: 16px;
+    color: #038DC6;
+    
+    &:hover svg {
+      right: 3px;
+    }
+    
+    svg {
+      position: absolute;
+      top: 2px;
+      right: 10px;
+      transition: $base-transition;
+    }
+  }
+
+  .separator {
+    margin: 20px 0;
+    border: 1px solid #e0e0e0;
   }
 }

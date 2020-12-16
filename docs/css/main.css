@@ -3729,6 +3729,73 @@ a {
   background-color: rgba(184, 184, 184, 0.1);
 }
 
+.popup-get-price-1 .popup__descr {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #202020;
+}
+
+.popup-get-price-1 .popup-form__row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popup-get-price-1 .popup-form__label {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  padding-right: 0;
+}
+
+.popup-get-price-1 .popup-form__label:last-child {
+  margin-bottom: 0;
+}
+
+.popup-get-price-1 .popup-form__label input[type="radio"] {
+  width: auto;
+  margin: 0;
+  margin-right: 15px;
+}
+
+#popup-get-price-2 {
+  max-width: 524px;
+}
+
+.popup-get-price-2 .popup__descr {
+  margin-bottom: 10px;
+}
+
+.popup-get-price-2 a {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  padding-right: 42px;
+  font-size: 16px;
+  color: #038DC6;
+}
+
+.popup-get-price-2 a:hover svg {
+  right: 3px;
+}
+
+.popup-get-price-2 a svg {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.popup-get-price-2 .separator {
+  margin: 20px 0;
+  border: 1px solid #e0e0e0;
+}
+
 /* End popups */
 
 /* END MAIN STYLES */

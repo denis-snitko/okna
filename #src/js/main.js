@@ -79,11 +79,11 @@ jQuery(function ($) {
         removalDelay: 300,
       });
 
-      $.magnificPopup.open({
-        items: {
-          src: $('#popup-calc-3-3')
-        }
-      });
+    //   $.magnificPopup.open({
+    //     items: {
+    //       src: $('#popup-get-price-2')
+    //     }
+    //   });
 
 });
 
