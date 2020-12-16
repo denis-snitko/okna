@@ -70,6 +70,21 @@ jQuery(function ($) {
             $(this).hide();
         })
     })
+
+
+    // magnificPopup
+    $('.open-popup-link').magnificPopup({
+        type:'inline',
+        mainClass: 'mfp-fade',
+        removalDelay: 300,
+      });
+
+      $.magnificPopup.open({
+        items: {
+          src: $('#popup-review')
+        }
+      });
+
 });
 
 

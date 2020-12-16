@@ -4,6 +4,7 @@
 .Spotlight-V100
 .Trashes
 .vscode
+.idea
 .github
 .env
 ehthumbs.db
