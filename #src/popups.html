@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <title>Popups</title>
+</head>
+
+<body style="padding: 40px;">
+  <h3>Модальные окна (Popup)</h3>
+  <ul style="list-style-type: none; font-size: 18px;">
+    <li>1. <a href="#popup-thanks" class="open-popup-link">popup-thanks</a></li>
+    <li>2. <a href="#popup-complaint" class="open-popup-link">popup-complaint</a></li>
+    <li>2. <a href="#popup-review" class="open-popup-link">popup-review</a></li>
+  </ul>
+  
+
+  <!-- Popups -->
+  @@include('modules/popups/_popup-thanks.html')
+  @@include('modules/popups/_popup-complaint.html')
+  @@include('modules/popups/_popup-review.html')
+  <!-- End Popups -->
+
+
+  <script src="./js/vendors.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
