@@ -81,7 +81,7 @@ jQuery(function ($) {
 
       $.magnificPopup.open({
         items: {
-          src: $('#popup-free-measure')
+          src: $('#popup-calc-3-3')
         }
       });
 

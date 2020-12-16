@@ -3540,6 +3540,7 @@ a {
   margin-right: 10px;
   font-weight: 500;
   font-size: 14px;
+  text-align: right;
   color: #4f4f4f;
 }
 
@@ -3590,7 +3591,7 @@ a {
 
 .popup-form__label select {
   background: url(../img/svg/arrow-down.svg) center no-repeat;
-  background-position-x: 97%;
+  background-position-x: 96%;
   background-position-y: center;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -3611,6 +3612,15 @@ a {
   font-size: 16px;
   -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.popup-form__btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #popup-thanks {
@@ -3673,6 +3683,50 @@ a {
 .popup-free-measure {
   width: 100%;
   max-width: 700px;
+}
+
+.popup-calc-3-2 .popup__descr {
+  margin-bottom: 12px;
+}
+
+.popup-calc-3-2 .popup__descr span {
+  font-size: 12px;
+}
+
+.popup-calc-3-2 .feedback-form__header-button {
+  margin: 0 10px;
+}
+
+.popup-calc-3-2 .header-button--back {
+  color: #333333;
+  background-color: #ffffff;
+  border: #ffffff;
+}
+
+.popup-calc-3-2 .header-button--back:hover {
+  background-color: rgba(184, 184, 184, 0.1);
+}
+
+.popup-calc-3-3 .popup__descr {
+  margin-bottom: 20px;
+}
+
+.popup-calc-3-3 .popup-form__label:first-child {
+  padding-right: 0;
+}
+
+.popup-calc-3-3 .feedback-form__header-button {
+  margin: 0 10px;
+}
+
+.popup-calc-3-3 .header-button--back {
+  color: #333333;
+  background-color: #ffffff;
+  border: #ffffff;
+}
+
+.popup-calc-3-3 .header-button--back:hover {
+  background-color: rgba(184, 184, 184, 0.1);
 }
 
 /* End popups */
