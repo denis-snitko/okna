@@ -1189,12 +1189,23 @@ a {
           transform: translateY(-3px);
 }
 
-.mfp-bg {
-  opacity: .4;
+.question {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 21px;
+  height: 21px;
+  padding-top: 3px;
+  font-weight: 900;
+  text-align: center;
+  color: #ffffff;
+  background: #038DC6;
+  border: none;
+  border-radius: 50%;
 }
 
-.mfp-inline-holder .mfp-content {
-  width: auto;
+.mfp-bg {
+  opacity: 0.4;
 }
 
 /* overlay at start */
@@ -1241,7 +1252,8 @@ a {
 
 .white-popup {
   position: relative;
-  width: auto;
+  width: 100%;
+  max-width: 653px;
   margin: 20px auto;
   padding: 40px;
   background: #ffffff;
@@ -3495,7 +3507,12 @@ a {
   margin-bottom: 25px;
 }
 
+.popup-form__row--right {
+  margin-left: 80px;
+}
+
 .popup-form__label {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3512,11 +3529,11 @@ a {
 }
 
 .popup-form__label--textarea:first-child {
-  margin-right: 0 !important;
+  padding-right: 0 !important;
 }
 
 .popup-form__label:first-child {
-  margin-right: 30px;
+  padding-right: 30px;
 }
 
 .popup-form__label span {
@@ -3527,6 +3544,7 @@ a {
 }
 
 .popup-form__label input,
+.popup-form__label select,
 .popup-form__label textarea {
   width: 100%;
   padding: 10px 15px;
@@ -3538,34 +3556,46 @@ a {
 }
 
 .popup-form__label input:focus,
+.popup-form__label select:focus,
 .popup-form__label textarea:focus {
   border: 1px solid #333333;
 }
 
-.popup-form__label input::-webkit-input-placeholder, .popup-form__label textarea::-webkit-input-placeholder {
+.popup-form__label input::-webkit-input-placeholder, .popup-form__label select::-webkit-input-placeholder, .popup-form__label textarea::-webkit-input-placeholder {
   opacity: 0.5;
   color: #828282;
 }
 
-.popup-form__label input::-moz-placeholder, .popup-form__label textarea::-moz-placeholder {
+.popup-form__label input::-moz-placeholder, .popup-form__label select::-moz-placeholder, .popup-form__label textarea::-moz-placeholder {
   opacity: 0.5;
   color: #828282;
 }
 
-.popup-form__label input:-ms-input-placeholder, .popup-form__label textarea:-ms-input-placeholder {
+.popup-form__label input:-ms-input-placeholder, .popup-form__label select:-ms-input-placeholder, .popup-form__label textarea:-ms-input-placeholder {
   opacity: 0.5;
   color: #828282;
 }
 
-.popup-form__label input::-ms-input-placeholder, .popup-form__label textarea::-ms-input-placeholder {
+.popup-form__label input::-ms-input-placeholder, .popup-form__label select::-ms-input-placeholder, .popup-form__label textarea::-ms-input-placeholder {
   opacity: 0.5;
   color: #828282;
 }
 
 .popup-form__label input::placeholder,
+.popup-form__label select::placeholder,
 .popup-form__label textarea::placeholder {
   opacity: 0.5;
   color: #828282;
+}
+
+.popup-form__label select {
+  background: url(../img/svg/arrow-down.svg) center no-repeat;
+  background-position-x: 97%;
+  background-position-y: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
 }
 
 .popup-form__label textarea {
@@ -3583,8 +3613,12 @@ a {
           box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
 }
 
+#popup-thanks {
+  max-width: 292px;
+}
+
 .popup-thanks {
-  max-width: 282px;
+  width: 100%;
   text-align: center;
 }
 
@@ -3596,8 +3630,12 @@ a {
   margin-bottom: 10px;
 }
 
-.popup-complaint {
+#popup-complaint {
   max-width: 604px;
+}
+
+.popup-complaint {
+  width: 100%;
 }
 
 .popup-complaint .popup__descr {
@@ -3630,6 +3668,11 @@ a {
 .popup-review .main-item__header-stars svg {
   width: 14px;
   margin: 0 2px;
+}
+
+.popup-free-measure {
+  width: 100%;
+  max-width: 700px;
 }
 
 /* End popups */

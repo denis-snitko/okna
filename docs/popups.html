@@ -14,7 +14,8 @@
   <ul style="list-style-type: none; font-size: 18px;">
     <li>1. <a href="#popup-thanks" class="open-popup-link">popup-thanks</a></li>
     <li>2. <a href="#popup-complaint" class="open-popup-link">popup-complaint</a></li>
-    <li>2. <a href="#popup-review" class="open-popup-link">popup-review</a></li>
+    <li>3. <a href="#popup-review" class="open-popup-link">popup-review</a></li>
+    <li>4. <a href="#popup-free-measure" class="open-popup-link">popup-free-measure</a></li>
   </ul>
   
 
@@ -117,6 +118,58 @@
       </div>
 
       <button class="header-button feedback-form__header-button">Отправить</button>
+    </form>
+
+  </div>
+</div>
+  <div id="popup-free-measure" class="white-popup mfp-hide">
+  <div class="popup-free-measure popup">
+    <div class="popup__title">Заявка на бесплатный замер</div>
+
+    <form action="#" class="popup-form">
+      <div class="popup-form__row popup-form__row--right">
+        <label class="popup-form__label">
+          <span>Имя</span><input type="text" placeholder="Написать">
+        </label>
+
+        <label class="popup-form__label">
+          <span>Телефон</span><input type="tel" placeholder="Написать">
+        </label>
+      </div>
+      <div class="popup-form__row popup-form__row--right">
+        <label class="popup-form__label popup-form__label--textarea">
+          <select>
+            <option value="" selected>Ваш ближайший населенный пункт</option>
+            <option value="Москва">Москва</option>
+            <option value="Самара">Самара</option>
+          </select>
+        </label>
+      </div>
+      <div class="popup-form__row popup-form__row--right">
+        <label class="popup-form__label">
+          <span>Адрес</span><input type="text" placeholder="Написать">
+          <button class="question" type="button">?</button>
+        </label>
+      </div>
+      <div class="popup-form__row popup-form__row--right">
+        <label class="popup-form__label">
+          <span>Дата</span><input type="date" placeholder="Написать">
+        </label>
+
+        <label class="popup-form__label" style="padding-right: 30px;">
+          <span>Число проемов</span><input type="tel" placeholder="Написать">
+          <button class="question" type="button">?</button>
+
+        </label>
+      </div>
+      <div class="popup-form__row">
+        <label class="popup-form__label popup-form__label--textarea">
+          <span style="text-align: right;">Дополнительная <br> информация</span>
+          <textarea placeholder="Написать"></textarea>
+        </label>
+      </div>
+
+      <button class="header-button feedback-form__header-button">Далее</button>
     </form>
 
   </div>

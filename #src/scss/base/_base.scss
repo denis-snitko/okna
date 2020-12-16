@@ -391,16 +391,30 @@ a {
   }
 }
 
+.question {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 21px;
+  height: 21px;
+  padding-top: 3px;
+  font-weight: 900;
+  text-align: center;
+  color: #ffffff;
+  background: #038DC6;
+  border: none;
+  border-radius: 50%;
 
+}
 
 //POPUP
 
 .mfp-bg {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .mfp-inline-holder .mfp-content {
-  width: auto;
+  // width: auto;
 }
 
 /* overlay at start */
@@ -439,8 +453,8 @@ a {
 
 .white-popup {
   position: relative;
-  width: auto;
-  // max-width: 500px;
+  width: 100%;
+  max-width: 653px;
   margin: 20px auto;
   padding: 40px;
   background: #ffffff;

@@ -79,11 +79,11 @@ jQuery(function ($) {
         removalDelay: 300,
       });
 
-    //   $.magnificPopup.open({
-    //     items: {
-    //       src: $('#popup-review')
-    //     }
-    //   });
+      $.magnificPopup.open({
+        items: {
+          src: $('#popup-free-measure')
+        }
+      });
 
 });
 
