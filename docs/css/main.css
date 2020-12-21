@@ -3584,28 +3584,6 @@ a {
   padding: 25px;
 }
 
-.finished-windows-card__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
-  font-size: 20px;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.finished-windows-card__price {
-  font-weight: 700;
-  font-size: 30px;
-  color: #64C70E;
-}
-
 .finished-windows-card__img {
   padding-bottom: 15px;
   border-bottom: 1px solid #e0e0e0;
@@ -3621,6 +3599,28 @@ a {
   max-height: 235px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.windows-card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.windows-card-header__price {
+  font-weight: 700;
+  font-size: 30px;
+  color: #64C70E;
 }
 
 .description-table {
