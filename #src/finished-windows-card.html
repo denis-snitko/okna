@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Все акции</title>
+</head>
+
+<body>
+<div class="main-body">
+  <!-- Header -->
+  @@include('modules/s-header/_s-header.html')
+  <!-- End Header -->
+
+  <!-- Banner -->
+  @@include('modules/s-banner/_s-banner.html')
+  <!-- End Banner -->
+
+  <!-- Bread-crumbs -->
+  <div class="bread-crumbs">
+    <div class="container">
+      <ul class="bread-crumbs__list">
+        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Окна.рф</a></li>
+        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Готовые окна</a></li>
+        <li class="bread-crumbs__item">Балконная дверь, 2 390, 650, Однушка, Двухкамерный, Поворотно-откидное</li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Bread-crumbs -->
+
+
+  <!-- Main-content -->
+  <main class="main-content">
+    <div class="container">
+      <div class="title-body">
+        <h1 class="main-title">
+          Балконная дверь, 2 390, 650, Однушка, Двухкамерный, Поворотно-откидное
+        </h1>
+        <div class="filter-icon">
+          <!-- filter-icon -->
+        </div>
+      </div>
+      <div class="content-body">
+
+        <div class="content-body__row">
+          <div class="content-body__col-3">
+            @@include('modules/company-action/_company-action-aside.html')
+          </div>
+          <div class="content-body__col-7">
+            @@include('modules/finished-windows-card/_finished-windows-card.html')
+          </div>
+          <div class="content-body__col-2">
+            <!-- Banners-body -->
+            @@include('modules/banners-body/_banners-body.html')
+            <!-- End Banners-body -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- End Main-content -->
+
+  <!-- Footer -->
+  @@include('modules/s-footer/_s-footer.html')
+  <!-- End Footer -->
+
+  <!-- Sub-footer -->
+  @@include('modules/sub-footer/_s-sub-footer.html')
+  <!-- End Sub-footer -->
+
+</div>
+<script src="./js/vendors.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+</html>

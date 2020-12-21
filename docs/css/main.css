@@ -2504,6 +2504,10 @@ a {
   border-bottom: 1px solid #e0e0e0;
 }
 
+.base-articles__title a {
+  color: #038dc6;
+}
+
 .base-articles__title span {
   font-weight: 700;
   font-size: 20px;
@@ -3572,6 +3576,111 @@ a {
 }
 
 /* End finished-windows */
+
+/* finished-windows-card */
+
+.finished-windows-card {
+  margin-bottom: 100px;
+  padding: 25px;
+}
+
+.finished-windows-card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.finished-windows-card__price {
+  font-weight: 700;
+  font-size: 30px;
+  color: #64C70E;
+}
+
+.finished-windows-card__img {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.finished-windows-card__img img {
+  display: block;
+  width: 100%;
+  max-width: 660px;
+  height: 100%;
+  max-height: 235px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.description-table {
+  font-weight: 500;
+}
+
+.description-table a {
+  color: #038dc6;
+}
+
+.description-table__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.description-table__col-left {
+  width: 100%;
+  max-width: 70%;
+  color: #4f4f4f;
+}
+
+.description-table__col-right {
+  width: 100%;
+  max-width: 30%;
+  color: #202020;
+}
+
+.description-table__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.description-table__footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description-table__footer a svg {
+  margin-right: 7px;
+}
+
+/* End finished-windows-card */
 
 /* popups */
 

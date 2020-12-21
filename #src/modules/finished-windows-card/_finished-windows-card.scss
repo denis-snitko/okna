@@ -1,0 +1,83 @@
+.finished-windows-card {
+  margin-bottom: 100px;
+  padding: 25px;
+  
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 30px;
+    color: #64C70E;
+  }
+
+  &__img {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 2px;
+    overflow: hidden;
+    
+    img {
+      display: block;
+      width: 100%;
+      max-width: 660px;
+      height: 100%;
+      max-height: 235px;
+
+      object-fit: cover;
+
+
+    }
+  }
+}
+
+.description-table {
+  font-weight: 500;
+
+  a {
+    color: #038dc6;
+  }
+  
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  &__col-left {
+    width: 100%;
+    max-width: 70%;
+    color: #4f4f4f;
+  }
+  
+  &__col-right {
+    width: 100%;
+    max-width: 30%;
+    color: #202020;
+  }
+  
+  &__footer {
+    display: flex;
+    //flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+    
+    a {
+      display: flex;
+      align-items: center;
+      
+      svg {
+        margin-right: 7px;
+      }
+    }
+  }
+}

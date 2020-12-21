@@ -10,6 +10,10 @@
     margin-bottom: 30px;
     padding-bottom: 5px;
     border-bottom: 1px solid #e0e0e0;
+    
+    a {
+      color: #038dc6;
+    }
 
     @include sm-block() {
       margin-bottom: 25px;
