@@ -1258,8 +1258,8 @@ a {
   padding: 40px;
   background: #ffffff;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
-          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
 }
 
 /* End Base styles */
@@ -3610,8 +3610,8 @@ a {
   font-family: "Lato";
   font-weight: 500;
   font-size: 16px;
-  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
 }
 
 .popup-form__btn-wrap {
@@ -3629,6 +3629,7 @@ a {
 
 .popup-thanks {
   width: 100%;
+  height: 100%;
   text-align: center;
 }
 
@@ -3757,8 +3758,7 @@ a {
 
 .popup-get-price-1 .popup-form__label input[type="radio"] {
   width: auto;
-  margin: 0;
-  margin-right: 15px;
+  margin: 0 15px 0 0;
 }
 
 #popup-get-price-2 {
@@ -4310,6 +4310,101 @@ a {
 
   .article-sale__activity {
     display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .mfp-container {
+    padding: 0;
+  }
+
+  .mfp-content {
+    height: 100%;
+  }
+
+  .white-popup {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 30px 15px;
+    border-radius: 0;
+  }
+
+  .popup-form__row--right {
+    margin: 0;
+  }
+
+  .popup-form__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .popup-form__label {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 15px;
+    padding-right: 0 !important;
+  }
+
+  .popup-form__label--textarea {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .popup-form__label--textarea span {
+    display: block;
+    margin-bottom: 12px;
+    text-align: start !important;
+  }
+
+  .popup-form__label--textarea textarea {
+    max-width: 100% !important;
+  }
+
+  .popup-form__label:first-child {
+    margin-bottom: 15px;
+    padding-right: 0;
+  }
+
+  .popup-form__label input,
+  .popup-form__label select,
+  .popup-form__label textarea {
+    max-width: 250px;
+  }
+
+  .popup-form__label select {
+    max-width: 100%;
+  }
+
+  .popup-form .feedback-form__header-button {
+    margin-top: 0;
+  }
+
+  #popup-thanks {
+    max-width: 100%;
+  }
+
+  .popup-thanks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .popup-complaint .popup__descr {
+    padding-left: 0;
   }
 }
 
