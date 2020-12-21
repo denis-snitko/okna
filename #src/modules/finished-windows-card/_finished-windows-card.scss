@@ -1,6 +1,10 @@
 .finished-windows-card {
   margin-bottom: 100px;
   padding: 25px;
+  
+  &--title {
+    margin-top: 50px;
+  }
 
   &__img {
     padding-bottom: 15px;
