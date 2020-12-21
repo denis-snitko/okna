@@ -3577,6 +3577,27 @@ a {
 
 /* End finished-windows */
 
+/* standart-windows-card */
+
+.standart-windows-card {
+  margin-bottom: 25px;
+}
+
+.standart-windows-card__windows-card-header {
+  padding: 25px;
+}
+
+.description-table--standart {
+  margin-bottom: 100px;
+  padding: 25px;
+}
+
+.windows-offer--standart {
+  margin-bottom: 50px;
+}
+
+/* End standart-windows-card */
+
 /* finished-windows-card */
 
 .finished-windows-card {
