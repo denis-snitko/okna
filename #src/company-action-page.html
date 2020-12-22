@@ -2,78 +2,78 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Все акции</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Все акции</title>
 </head>
 
 <body>
-    <div class="main-body">
-        <!-- Header -->
-        @@include('modules/s-header/_s-header.html')
-        <!-- End Header -->
+<div class="main-body">
+  <!-- Header -->
+  @@include('modules/s-header/_s-header.html')
+  <!-- End Header -->
 
-        <!-- Banner -->
-        @@include('modules/s-banner/_s-banner.html')
-        <!-- End Banner -->
+  <!-- Banner -->
+  @@include('modules/s-banner/_s-banner.html')
+  <!-- End Banner -->
 
-        <!-- Bread-crumbs -->
-        <div class="bread-crumbs">
-            <div class="container">
-                <ul class="bread-crumbs__list">
-                    <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Окна.рф</a></li>
-                    <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Компании</a></li>
-                    <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Фабрика окон</a></li>
-                    <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Акции</a></li>
-                    <li class="bread-crumbs__item">Окна из лиственницы по цене окон из сосны!</li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Bread-crumbs -->
-
-
-        <!-- Main-content -->
-        <main class="main-content">
-            <div class="container">
-                <div class="title-body">
-                    <h1 class="main-title">Окна из лиственницы по цене окон из сосны!</h1>
-                    <div class="filter-icon">
-                        <!-- filter-icon -->
-                    </div>
-                </div>
-                <div class="content-body">
-
-                    <div class="content-body__row">
-                        <div class="content-body__col-3">
-                            @@include('modules/company-action/_company-action-aside.html')
-                        </div>
-                        <div class="content-body__col-7">
-                            @@include('modules/company-action/_company-action.html')
-                        </div>
-                        <div class="content-body__col-2">
-                            <!-- Banners-body -->
-                            @@include('modules/banners-body/_banners-body.html')
-                            <!-- End Banners-body -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <!-- End Main-content -->
-
-        <!-- Footer -->
-        @@include('modules/s-footer/_s-footer.html')
-        <!-- End Footer -->
-
-        <!-- Sub-footer -->
-        @@include('modules/sub-footer/_s-sub-footer.html')
-        <!-- End Sub-footer -->
-
+  <!-- Bread-crumbs -->
+  <div class="bread-crumbs">
+    <div class="container">
+      <ul class="bread-crumbs__list">
+        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Окна.рф</a></li>
+        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Компании</a></li>
+        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Фабрика окон</a></li>
+        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Акции</a></li>
+        <li class="bread-crumbs__item">Окна из лиственницы по цене окон из сосны!</li>
+      </ul>
     </div>
-    <script src="./js/vendors.js"></script>
-    <script src="./js/main.js"></script>
+  </div>
+  <!-- End Bread-crumbs -->
+
+
+  <!-- Main-content -->
+  <main class="main-content">
+    <div class="container">
+      <div class="title-body">
+        <h1 class="main-title">Окна из лиственницы по цене окон из сосны!</h1>
+        <div class="filter-icon">
+          <!-- filter-icon -->
+        </div>
+      </div>
+      <div class="content-body">
+
+        <div class="content-body__row">
+          <div class="content-body__col-3">
+            @@include('modules/company-action/_company-action-aside.html')
+          </div>
+          <div class="content-body__col-7">
+            @@include('modules/company-action/_company-action.html')
+          </div>
+          <div class="content-body__col-2">
+            <!-- Banners-body -->
+            @@include('modules/banners-body/_banners-body.html')
+            <!-- End Banners-body -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- End Main-content -->
+
+  <!-- Footer -->
+  @@include('modules/s-footer/_s-footer.html')
+  <!-- End Footer -->
+
+  <!-- Sub-footer -->
+  @@include('modules/sub-footer/_s-sub-footer.html')
+  <!-- End Sub-footer -->
+
+</div>
+<script src="./js/vendors.js"></script>
+<script src="./js/main.js"></script>
 </body>
 
 </html>

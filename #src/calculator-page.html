@@ -2,70 +2,85 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Калькулятор окон</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Калькулятор окон</title>
 </head>
 
 <body>
-    <div class="main-body">
-        <!-- Header -->
-        @@include('modules/s-header/_s-header.html')
-        <!-- End Header -->
+<div class="main-body">
+  <!-- Header -->
+  @@include('modules/s-header/_s-header.html')
+  <!-- End Header -->
 
-        <!-- Main-content -->
-        <main class="main-content">
-            <div class="container">
-                <div class="title-body">
-                    <h1 class="main-title">
-                        Калькулятор окон: расчет цены на окна ПВХ в Москве и области
-                    </h1>
-                </div>
-                <div class="content-body">
+  <!-- Banner -->
+  @@include('modules/s-banner/_s-banner.html')
+  <!-- End Banner -->
 
-                    <div class="content-body__row">
-                        <div class="content-body__col-8">
-                            <!-- p-calculator -->
-                            @@include('modules/p-calculator/_s-calc-main.html')
-                            <!-- End p-calculator -->
-                        </div>
-                        <div class="content-body__col-4">
-                            <!-- p-calculator -->
-                            @@include('modules/p-calculator/_s-calc-aside.html')
-                            <!-- End p-calculator -->
-                        </div>
-                    </div>
-                </div>
+  <!-- Bread-crumbs -->
+  <div class="bread-crumbs">
+    <div class="container">
+      <ul class="bread-crumbs__list">
+        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Окна.рф</a></li>
+        <li class="bread-crumbs__item">Калькулятор окон</li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Bread-crumbs -->
 
-                <div class="company-advantages">
-                    @@include('modules/p-calculator/_s-company-advantages.html')
-                </div>
-                
-                <div class="review-block">
-                    @@include('modules/p-calculator/_s-review-block.html')
-                </div>
+  <!-- Main-content -->
+  <main class="main-content">
+    <div class="container">
+      <div class="title-body">
+        <h1 class="main-title">
+          Калькулятор окон: расчет цены на окна ПВХ в Москве и области
+        </h1>
+      </div>
+      <div class="content-body">
 
-            </div>
-        </main>
-        <!-- End Main-content -->
+        <div class="content-body__row">
+          <div class="content-body__col-8">
+            <!-- p-calculator -->
+            @@include('modules/p-calculator/_s-calc-main.html')
+            <!-- End p-calculator -->
+          </div>
+          <div class="content-body__col-4">
+            <!-- p-calculator -->
+            @@include('modules/p-calculator/_s-calc-aside.html')
+            <!-- End p-calculator -->
+          </div>
+        </div>
+      </div>
 
-        <!-- Text-block -->
-        @@include('modules/s-block-text/_s-block-text.html')
-        <!-- End Text-block -->
+      <div class="company-advantages">
+        @@include('modules/p-calculator/_s-company-advantages.html')
+      </div>
 
-        <!-- Footer -->
-        @@include('modules/s-footer/_s-footer.html')
-        <!-- End Footer -->
-
-        <!-- Sub-footer -->
-        @@include('modules/sub-footer/_s-sub-footer.html')
-        <!-- End Sub-footer -->
+      <div class="review-block">
+        @@include('modules/p-calculator/_s-review-block.html')
+      </div>
 
     </div>
-    <script src="./js/vendors.js"></script>
-    <script src="./js/main.js"></script>
+  </main>
+  <!-- End Main-content -->
+
+  <!-- Text-block -->
+  @@include('modules/s-block-text/_s-block-text.html')
+  <!-- End Text-block -->
+
+  <!-- Footer -->
+  @@include('modules/s-footer/_s-footer.html')
+  <!-- End Footer -->
+
+  <!-- Sub-footer -->
+  @@include('modules/sub-footer/_s-sub-footer.html')
+  <!-- End Sub-footer -->
+
+</div>
+<script src="./js/vendors.js"></script>
+<script src="./js/main.js"></script>
 </body>
 
 </html>
