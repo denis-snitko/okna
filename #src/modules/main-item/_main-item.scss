@@ -207,10 +207,10 @@
     }
 
     &__show-more {
-        display: none;
         position: relative;
         top: -11px;
         left: 18px;
+        display: none;
         color: $base-blue;
         background: transparent;
         border: none;

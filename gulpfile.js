@@ -143,7 +143,7 @@ function img() {
         .pipe(
             imagemin({
                 progressive: true,
-                svgoPlugins: [{ removeViewBox: false }],
+                // svgoPlugins: [{ removeViewBox: false }],
                 interlaced: true,
                 optimizationLevel: 3 // 0 to 7
             })

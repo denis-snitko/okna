@@ -1,7 +1,6 @@
 .finished-windows {
-  
   a {
-    color: #038DC6;
+    color: #038dc6;
   }
 
   &__row {
@@ -15,16 +14,12 @@
     width: calc(33.33333% - 14px);
     margin: 0 7px 20px 7px;
     padding: 11px;
-
-
   }
 }
-
 
 .finished-windows-aside {
   border: 1px solid;
 }
-
 
 .window-small-card {
   display: flex;
@@ -32,7 +27,6 @@
   justify-content: space-between;
   height: 100%;
   min-height: 342px;
-
 
   &__title {
     display: flex;
@@ -42,7 +36,6 @@
     padding-bottom: 10px;
     font-weight: 600;
     border-bottom: 1px solid #e0e0e0;
-
   }
 
   &__img {
@@ -78,7 +71,53 @@
     font-size: 24px;
     text-align: center;
 
-    color: #64C70E;
+    color: #64c70e;
+  }
+}
 
+.base-block-swiper {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 35px 0 33px 0;
+}
+
+.finished-windows-swiper {
+  margin: 0 75px;
+  overflow: hidden;
+
+  .swiper-slide {
+    width: auto;
+    text-align: center;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
+
+    cursor: pointer;
+
+    @include sm-block() {
+      display: none;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 15px;
+    background: url("../img/svg/big-arrow-right.svg") center no-repeat;
+    background-color: #ffffff;
+    transform: rotate(180deg);
+  }
+
+  .swiper-button-next {
+    right: 15px;
+    background: url("../img/svg/big-arrow-right.svg") center no-repeat;
+    background-color: #ffffff;
   }
 }

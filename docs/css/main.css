@@ -944,6 +944,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-right: 0;
 }
 
 .content-body__col-3,
@@ -1853,10 +1854,10 @@ a {
 }
 
 .main-item__show-more {
-  display: none;
   position: relative;
   top: -11px;
   left: 18px;
+  display: none;
   color: #038dc6;
   background: transparent;
   border: none;
@@ -3478,7 +3479,7 @@ a {
 /* finished-windows */
 
 .finished-windows a {
-  color: #038DC6;
+  color: #038dc6;
 }
 
 .finished-windows__row {
@@ -3572,7 +3573,51 @@ a {
   font-weight: 700;
   font-size: 24px;
   text-align: center;
-  color: #64C70E;
+  color: #64c70e;
+}
+
+.base-block-swiper {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 35px 0 33px 0;
+}
+
+.finished-windows-swiper {
+  margin: 0 75px;
+  overflow: hidden;
+}
+
+.finished-windows-swiper .swiper-slide {
+  width: auto;
+  text-align: center;
+}
+
+.finished-windows-swiper .swiper-button-prev,
+.finished-windows-swiper .swiper-button-next {
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.finished-windows-swiper .swiper-button-prev {
+  left: 15px;
+  background: url("../img/svg/big-arrow-right.svg") center no-repeat;
+  background-color: #ffffff;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.finished-windows-swiper .swiper-button-next {
+  right: 15px;
+  background: url("../img/svg/big-arrow-right.svg") center no-repeat;
+  background-color: #ffffff;
 }
 
 /* End finished-windows */
@@ -4606,6 +4651,11 @@ a {
   }
 
   .article-sale__activity {
+    display: none;
+  }
+
+  .finished-windows-swiper .swiper-button-prev,
+  .finished-windows-swiper .swiper-button-next {
     display: none;
   }
 }
