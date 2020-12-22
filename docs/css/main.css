@@ -805,10 +805,10 @@ body {
 
 h1 {
   margin-bottom: 40px;
+  padding-top: 5px;
   font-family: "Gilroy";
   font-weight: 600;
   font-size: 24px;
-  line-height: 43px;
   color: #333333;
 }
 
@@ -931,6 +931,10 @@ a {
 
 .bread-crumbs__link:hover {
   color: #038dc6;
+}
+
+.content-body__top-filter {
+  margin-bottom: -20px;
 }
 
 .content-body__row {
@@ -1621,10 +1625,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .top-filter__links {
@@ -1662,12 +1669,15 @@ a {
 }
 
 .top-filter form select {
+  height: 36px;
   margin-left: 5px;
-  padding: 0 20px 0 10px;
+  padding: 10px 15px;
+  padding-right: 25px;
   font-weight: 500;
   color: #038dc6;
-  background: url("../img/svg/arrow-down.svg") right center no-repeat;
-  border: none;
+  background: url("../img/svg/arrow-down.svg") 88% center no-repeat;
+  border: 1px solid #e0e0e0;
+  border-radius: 25px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
