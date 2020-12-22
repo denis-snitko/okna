@@ -62,8 +62,7 @@
   &__price {
     font-weight: 700;
     font-size: 16px;
-    color: #038DC6;
-
+    color: #038dc6;
   }
 }
 
@@ -71,6 +70,59 @@
   margin-bottom: 50px;
 }
 
+.window-description {
+  padding: 0 25px 25px 25px;
 
+  &__row {
+    display: flex;
+  }
 
+  &__img {
+    width: 100%;
+    max-width: 226px;
+    height: 100%;
+    max-height: 235px;
+    margin-right: 18px;
 
+    img {
+      width: inherit;
+      height: 235px;
+      text-align: center;
+      object-fit: contain;
+    }
+  }
+
+  &__text {
+    width: 100%;
+
+    .question {
+      position: relative;
+      top: -1px;
+      left: 8px;
+      display: inline-block;
+    }
+  }
+
+  &__cell {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 0;
+    font-weight: 700;
+
+    border-bottom: 1px solid #e0e0e0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &--total {
+      font-size: 18px;
+      border-bottom: none;
+
+      p:last-child {
+        font-size: 24px;
+      }
+    }
+  }
+}

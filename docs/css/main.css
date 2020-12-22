@@ -3756,11 +3756,73 @@ a {
 .windows-offer__price {
   font-weight: 700;
   font-size: 16px;
-  color: #038DC6;
+  color: #038dc6;
 }
 
 .windows-offer--standart {
   margin-bottom: 50px;
+}
+
+.window-description {
+  padding: 0 25px 25px 25px;
+}
+
+.window-description__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.window-description__img {
+  width: 100%;
+  max-width: 226px;
+  height: 100%;
+  max-height: 235px;
+  margin-right: 18px;
+}
+
+.window-description__img img {
+  width: inherit;
+  height: 235px;
+  text-align: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.window-description__text {
+  width: 100%;
+}
+
+.window-description__text .question {
+  position: relative;
+  top: -1px;
+  left: 8px;
+  display: inline-block;
+}
+
+.window-description__cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+  font-weight: 700;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.window-description__cell:first-child {
+  padding-top: 0;
+}
+
+.window-description__cell--total {
+  font-size: 18px;
+  border-bottom: none;
+}
+
+.window-description__cell--total p:last-child {
+  font-size: 24px;
 }
 
 /* End standart-windows-card */
