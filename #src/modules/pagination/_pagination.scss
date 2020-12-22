@@ -1,0 +1,42 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    margin: 0 6px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4f4f4f;
+
+    &:first-child, &:last-child {
+      cursor: pointer;
+    }
+
+    &:first-child {
+      margin-right: 12px;
+    }
+    &:last-child {
+      margin-left: 12px;
+    }
+  }
+
+  &__link {
+    color: inherit;
+    transition: $base-transition;
+
+    &:hover {
+      color: #038dc6;
+    }
+
+    &--active {
+      color: #038dc6;
+    }
+  }
+}

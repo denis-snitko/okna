@@ -1,85 +1,83 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Отзывы</title>
+  </head>
 
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Отзывы</title>
-</head>
+  <body>
+    <div class="main-body">
+      <!-- Header -->
+      @@include('modules/s-header/_s-header.html')
+      <!-- End Header -->
 
-<body>
-<div class="main-body">
-  <!-- Header -->
-  @@include('modules/s-header/_s-header.html')
-  <!-- End Header -->
+      <!-- Banner -->
+      @@include('modules/s-banner/_s-banner.html')
+      <!-- End Banner -->
 
-  <!-- Banner -->
-  @@include('modules/s-banner/_s-banner.html')
-  <!-- End Banner -->
-
-  <!-- Bread-crumbs -->
-  <div class="bread-crumbs">
-    <div class="container">
-      <ul class="bread-crumbs__list">
-        <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Окна.рф</a></li>
-        <li class="bread-crumbs__item">Отзывы</li>
-      </ul>
-    </div>
-  </div>
-  <!-- End Bread-crumbs -->
-
-
-  <!-- Main-content -->
-  <main class="main-content">
-    <div class="container">
-      <div class="title-body">
-        <h1 class="main-title">
-          Пластиковые окна: отзывы о качестве и оконных компаниях Москвы
-        </h1>
-      </div>
-      <div class="content-body">
-
-        <div class="content-body__row">
-          <div class="content-body__col-10">
-            <!-- s-reviews -->
-            @@include('modules/s-reviews/_s-reviews.html')
-            <!-- End s-reviews -->
-          </div>
-          <div class="content-body__col-2">
-            <!-- Banners-body -->
-            @@include('modules/banners-body/_banners-body.html')
-            <!-- End Banners-body -->
-          </div>
+      <!-- Bread-crumbs -->
+      <div class="bread-crumbs">
+        <div class="container">
+          <ul class="bread-crumbs__list">
+            <li class="bread-crumbs__item">
+              <a class="bread-crumbs__link" href="./index.html">Окна.рф</a>
+            </li>
+            <li class="bread-crumbs__item">Отзывы</li>
+          </ul>
         </div>
       </div>
+      <!-- End Bread-crumbs -->
+
+      <!-- Main-content -->
+      <main class="main-content">
+        <div class="container">
+          <div class="title-body">
+            <h1 class="main-title">
+              Пластиковые окна: отзывы о качестве и оконных компаниях Москвы
+            </h1>
+          </div>
+          <div class="content-body">
+            <div class="content-body__row">
+              <div class="content-body__col-10">
+                <!-- s-reviews -->
+                @@include('modules/s-reviews/_s-reviews.html')
+                <!-- End s-reviews -->
+              </div>
+              <div class="content-body__col-2">
+                <!-- Banners-body -->
+                @@include('modules/banners-body/_banners-body.html')
+                <!-- End Banners-body -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination -->
+        @@include('modules/pagination/_pagination.html')
+        <!-- End Pagination -->
+        <div class="reviews-feedback">
+          <div class="container">
+            @@include('modules/s-reviews/_reviews-feedback.html')
+          </div>
+        </div>
+      </main>
+      <!-- End Main-content -->
+
+      <!-- Text-block -->
+      <!-- @@include('modules/s-block-text/_s-block-text.html') -->
+      <!-- End Text-block -->
+
+      <!-- Footer -->
+      @@include('modules/s-footer/_s-footer.html')
+      <!-- End Footer -->
+
+      <!-- Sub-footer -->
+      @@include('modules/sub-footer/_s-sub-footer.html')
+      <!-- End Sub-footer -->
     </div>
-
-    <div class="reviews-feedback">
-      <div class="container">
-        @@include('modules/s-reviews/_reviews-feedback.html')
-      </div>
-    </div>
-
-  </main>
-  <!-- End Main-content -->
-
-  <!-- Text-block -->
-  <!-- @@include('modules/s-block-text/_s-block-text.html') -->
-  <!-- End Text-block -->
-
-  <!-- Footer -->
-  @@include('modules/s-footer/_s-footer.html')
-  <!-- End Footer -->
-
-  <!-- Sub-footer -->
-  @@include('modules/sub-footer/_s-sub-footer.html')
-  <!-- End Sub-footer -->
-
-</div>
-<script src="./js/vendors.js"></script>
-<script src="./js/main.js"></script>
-</body>
-
+    <script src="./js/vendors.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
