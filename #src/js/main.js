@@ -85,6 +85,36 @@ jQuery(function ($) {
   //     }
   //   });
 
+
+
+  $("#slider-range").slider({
+    range: true,
+    min: 0,
+    max: 2500,
+    values: [600, 2000],
+    step: 1,
+    slide: function (event, ui) {
+      $("#amount-minus-1").val(ui.values[0]);
+      $("#amount-plus-1").val(ui.values[1]);
+    }
+  });
+  $("#amount-minus-1").val($("#slider-range").slider("values", 0));
+  $("#amount-plus-1").val($("#slider-range").slider("values", 1));
+
+  $("#slider-range-1").slider({
+    range: true,
+    min: 0,
+    max: 2500,
+    values: [600, 2000],
+    step: 1,
+    slide: function (event, ui) {
+      $("#amount-minus-2").val(ui.values[0]);
+      $("#amount-plus-2").val(ui.values[1]);
+    }
+  });
+  $("#amount-minus-2").val($("#slider-range-1").slider("values", 0));
+  $("#amount-plus-2").val($("#slider-range-1").slider("values", 1));
+
 });
 
 

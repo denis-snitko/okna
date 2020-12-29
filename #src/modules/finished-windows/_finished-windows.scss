@@ -59,6 +59,23 @@
       color: #202020;
     }
   }
+
+  .ui-slider {
+    height: 3px;
+    background: #e0e0e0;
+    border: none;
+  }
+
+  .ui-slider-range {
+    background: #038DC6;
+  }
+
+  .ui-slider-handle {
+    top: -0.4em;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  }
 }
 
 .window-small-card {

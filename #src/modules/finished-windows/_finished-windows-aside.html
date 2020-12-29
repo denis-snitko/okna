@@ -3,11 +3,24 @@
     <div class="window-filter">
       <div class="window-filter__block">
         <div class="window-filter__title">Ширина изделия, мм</div>
-        <input type="range" min="0" max="10000" step="1" value="50">
+        
+          <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+            <input type="text" id="amount-minus-1" style="color:#202020; font-weight: 14px; max-width: 52px; width: 100%;">
+          <input type="text" id="amount-plus-1" style="color:#202020; font-weight: 14px; max-width: 52px; width: 100%;">
+          </div>
+        <div id="slider-range"></div>
+
       </div>
-  
+      
       <div class="window-filter__block">
         <div class="window-filter__title">Высота изделия, мм</div>
+
+        <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+          <input type="text" id="amount-minus-2" style="color:#202020; font-weight: 14px; max-width: 52px; width: 100%;">
+        <input type="text" id="amount-plus-2" style="color:#202020; font-weight: 14px; max-width: 52px; width: 100%;">
+        </div>
+      <div id="slider-range-1"></div>
+
       </div>
   
       <div class="window-filter__block">

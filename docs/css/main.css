@@ -3620,6 +3620,23 @@ a {
   color: #202020;
 }
 
+.window-filter .ui-slider {
+  height: 3px;
+  background: #e0e0e0;
+  border: none;
+}
+
+.window-filter .ui-slider-range {
+  background: #038DC6;
+}
+
+.window-filter .ui-slider-handle {
+  top: -0.4em;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
 .window-small-card {
   display: -webkit-box;
   display: -ms-flexbox;

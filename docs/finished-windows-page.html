@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="./css/main.css" />
     <title>Готовые окна</title>
   </head>
@@ -281,11 +281,24 @@
     <div class="window-filter">
       <div class="window-filter__block">
         <div class="window-filter__title">Ширина изделия, мм</div>
-        <input type="range" min="0" max="10000" step="1" value="50">
+        
+          <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+            <input type="text" id="amount-minus-1" style="color:#202020; font-weight: 14px; max-width: 52px; width: 100%;">
+          <input type="text" id="amount-plus-1" style="color:#202020; font-weight: 14px; max-width: 52px; width: 100%;">
+          </div>
+        <div id="slider-range"></div>
+
       </div>
-  
+      
       <div class="window-filter__block">
         <div class="window-filter__title">Высота изделия, мм</div>
+
+        <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+          <input type="text" id="amount-minus-2" style="color:#202020; font-weight: 14px; max-width: 52px; width: 100%;">
+        <input type="text" id="amount-plus-2" style="color:#202020; font-weight: 14px; max-width: 52px; width: 100%;">
+        </div>
+      <div id="slider-range-1"></div>
+
       </div>
   
       <div class="window-filter__block">
@@ -671,6 +684,7 @@
       <!-- End Sub-footer -->
     </div>
     <script src="./js/vendors.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
