@@ -6,11 +6,17 @@
   &__row {
     @include row-flex();
     margin: 0 -7px;
+
+    @include sm-block() {
+      justify-content: center;
+      margin: 0 -14px;
+    }
   }
 
   &__col {
     @include col();
     @include size(4);
+    @include size-sm(12);
     width: calc(33.33333% - 14px);
     margin: 0 7px 20px 7px;
     padding: 11px;
@@ -18,7 +24,41 @@
 }
 
 .finished-windows-aside {
-  border: 1px solid;
+  padding: 30px 15px;
+}
+
+.window-filter {
+  &__block {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+
+  .popup-form__label {
+    margin-bottom: 8px;
+
+    input {
+      width: auto;
+    }
+
+    span {
+      margin-left: 10px;
+      padding-top: 4px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #202020;
+    }
+  }
 }
 
 .window-small-card {
@@ -28,6 +68,10 @@
   height: 100%;
   min-height: 342px;
 
+  @include sm-block() {
+    text-align: center;
+  }
+
   &__title {
     display: flex;
     align-items: center;
@@ -36,6 +80,10 @@
     padding-bottom: 10px;
     font-weight: 600;
     border-bottom: 1px solid #e0e0e0;
+
+    @include sm-block() {
+      justify-content: center;
+    }
   }
 
   &__img {
@@ -52,6 +100,10 @@
       height: 100%;
       max-height: 121px;
       object-fit: cover;
+
+      @include sm-block() {
+        max-width: 100%;
+      }
     }
   }
 
@@ -102,10 +154,6 @@
     box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.2);
 
     cursor: pointer;
-
-    @include sm-block() {
-      display: none;
-    }
   }
 
   .swiper-button-prev {

@@ -75,6 +75,10 @@
 
   &__row {
     display: flex;
+
+    @include sm-block() {
+      flex-wrap: wrap;
+    }
   }
 
   &__img {
@@ -83,6 +87,11 @@
     height: 100%;
     max-height: 235px;
     margin-right: 18px;
+
+
+    @include sm-block() {
+      margin-bottom: 40px;
+    }
 
     img {
       width: inherit;
@@ -123,6 +132,10 @@
       p:last-child {
         font-size: 24px;
       }
+    }
+
+    @include sm-block() {
+      font-size: 14px;
     }
   }
 }
