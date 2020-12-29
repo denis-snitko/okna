@@ -1,84 +1,102 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Одна статья</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main-body">
-        <!-- Header -->
-        @@include('modules/s-header/_s-header.html')
-        <!-- End Header -->
+      <!-- Header -->
+      @@include('modules/s-header/_s-header.html')
+      <!-- End Header -->
 
-        <!-- Banner -->
-        @@include('modules/s-banner/_s-banner.html')
-        <!-- End Banner -->
+      <!-- Banner -->
+      @@include('modules/s-banner/_s-banner.html')
+      <!-- End Banner -->
 
-        <!-- Bread-crumbs -->
-        <div class="bread-crumbs">
-            <div class="container">
-                <ul class="bread-crumbs__list">
-                    <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Окна.рф</a></li>
-                    <li class="bread-crumbs__item"><a class="bread-crumbs__link" href="./index.html">Статьи</a></li>
-                    <li class="bread-crumbs__item">Как выбрать окно на кухню</li>
-                </ul>
-            </div>
+      <!-- Bread-crumbs -->
+      <div class="bread-crumbs">
+        <div class="container">
+          <ul class="bread-crumbs__list">
+            <li class="bread-crumbs__item">
+              <a class="bread-crumbs__link" href="./index.html">Окна.рф</a>
+            </li>
+            <li class="bread-crumbs__item">
+              <a class="bread-crumbs__link" href="./index.html">Статьи</a>
+            </li>
+            <li class="bread-crumbs__item">Как выбрать окно на кухню</li>
+          </ul>
         </div>
-        <!-- End Bread-crumbs -->
+      </div>
+      <!-- End Bread-crumbs -->
 
+      <!-- Main-content -->
+      <main class="main-content">
+        <div class="container">
+          <div class="title-body">
+            <h1 class="main-title s-article__main-title">
+              Как выбрать окно на кухню
+            </h1>
+          </div>
 
-        <!-- Main-content -->
-        <main class="main-content">
-            <div class="container">
-                <div class="title-body">
-                    <h1 class="main-title s-article__main-title">
-                        Как выбрать окно на кухню
-                    </h1>
-                </div>
-                <div class="content-body">
-
-                    <div class="content-body__row">
-                        <div class="content-body__col-3">
-                            <!-- s-articles-aside -->
-                            @@include('modules/s-articles-aside/_s-articles-aside.html')
-                            <!-- End s-articles-aside -->
-                        </div>
-                        <div class="content-body__col-7">
-                            <!-- s-article -->
-                            @@include('modules/s-article/_s-article.html')
-                            <!-- End s-article -->
-                        </div>
-                        <div class="content-body__col-2">
-                            <!-- Banners-body -->
-                            @@include('modules/banners-body/_banners-body.html')
-                            <!-- End Banners-body -->
-                        </div>
-                    </div>
-                </div>
+          <form action="#" class="s-article--popup-form">
+            <div class="popup-form__row">
+              <label class="popup-form__label">
+                <span>Раздел</span>
+                <select>
+                  <option value="" selected>Выбрать</option>
+                  <option value="Дерево">Популярно об окнах</option>
+                  <option value="Пластик">Выбор пластиковых окон</option>
+                  <option value="Пластик">Производство и монтаж
+                    окон ПВХ</option>
+                  <option value="Пластик">Оконные технологии</option>
+                  <option value="Пластик">Выбор пластиковых окон</option>
+                  <option value="Пластик">Пластик</option>
+                </select>
+              </label>
             </div>
-        </main>
-        <!-- End Main-content -->
+          </form>
 
-        <!-- Text-block -->
-        <!-- @@include('modules/s-block-text/_s-block-text.html') -->
-        <!-- End Text-block -->
+          <div class="content-body">
+            <div class="content-body__row">
+              <div class="content-body__col-3">
+                <!-- s-articles-aside -->
+                @@include('modules/s-articles-aside/_s-articles-aside.html')
+                <!-- End s-articles-aside -->
+              </div>
+              <div class="content-body__col-7">
+                <!-- s-article -->
+                @@include('modules/s-article/_s-article.html')
+                <!-- End s-article -->
+              </div>
+              <div class="content-body__col-2">
+                <!-- Banners-body -->
+                @@include('modules/banners-body/_banners-body.html')
+                <!-- End Banners-body -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- End Main-content -->
 
-        <!-- Footer -->
-        @@include('modules/s-footer/_s-footer.html')
-        <!-- End Footer -->
+      <!-- Text-block -->
+      <!-- @@include('modules/s-block-text/_s-block-text.html') -->
+      <!-- End Text-block -->
 
-        <!-- Sub-footer -->
-        @@include('modules/sub-footer/_s-sub-footer.html')
-        <!-- End Sub-footer -->
+      <!-- Footer -->
+      @@include('modules/s-footer/_s-footer.html')
+      <!-- End Footer -->
 
+      <!-- Sub-footer -->
+      @@include('modules/sub-footer/_s-sub-footer.html')
+      <!-- End Sub-footer -->
     </div>
     <script src="./js/vendors.js"></script>
     <script src="./js/main.js"></script>
-</body>
-
+  </body>
 </html>

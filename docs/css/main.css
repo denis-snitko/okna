@@ -2702,6 +2702,14 @@ a {
   color: #038dc6;
 }
 
+.s-article--popup-form {
+  display: none;
+}
+
+.s-article--popup-form .popup-form__label {
+  padding-right: 0 !important;
+}
+
 .s-article-item__date {
   margin-bottom: 15px;
   font-weight: 500;
@@ -4276,6 +4284,10 @@ a {
 /* END MAIN STYLES */
 
 @media screen and (max-width: 1200px) {
+  .content-body__row {
+    margin-right: -15px;
+  }
+
   .content-body__col-7 {
     width: calc(70.83333% - 30px);
   }
@@ -4450,6 +4462,10 @@ a {
 
   .s-article {
     margin-top: 0;
+  }
+
+  .s-article--popup-form {
+    display: block;
   }
 
   .s-basket__col {

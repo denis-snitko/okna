@@ -12,6 +12,16 @@
   a {
     color: #038dc6;
   }
+
+  &--popup-form {
+    .popup-form__label {
+      padding-right: 0 !important;
+    }
+    display: none;
+    @include lg-block() {
+      display: block;
+    }
+  }
 }
 
 .s-article-item {

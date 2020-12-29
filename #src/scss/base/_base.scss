@@ -131,6 +131,10 @@ a {
     @include row-flex();
     justify-content: space-between;
     margin-right: 0;
+
+    @include xl-block() {
+      margin-right: -15px;
+    }
   }
 
   &__col-3,
