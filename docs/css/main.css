@@ -3814,6 +3814,7 @@ a {
           justify-content: center;
   padding: 20px 10px;
   text-align: center;
+  word-wrap: anywhere;
 }
 
 .windows-offer__col:not(:last-child) {
@@ -4888,6 +4889,14 @@ a {
 
   .window-description__cell {
     font-size: 14px;
+  }
+
+  .windows-card-header {
+    font-size: 16px;
+  }
+
+  .windows-card-header__price {
+    font-size: 20px;
   }
 }
 

@@ -35,10 +35,19 @@
   font-size: 20px;
   border-bottom: 1px solid #e0e0e0;
 
+  @include sm-block() {
+    font-size: 16px;
+  }
+
   &__price {
     font-weight: 700;
     font-size: 30px;
     color: #64C70E;
+
+
+  @include sm-block() {
+    font-size: 20px;
+  }
   }
 }
 
